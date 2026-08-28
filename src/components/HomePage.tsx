@@ -1,8 +1,9 @@
 import type { Locale } from '@/lib/i18n';
+import Link from 'next/link';
 import { home } from '@/data/home';
+import { localePath } from '@/lib/i18n';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
-import BookingForm from './BookingForm';
 
 interface HomePageProps {
   locale: Locale;
@@ -117,7 +118,6 @@ export default function HomePage({ locale }: HomePageProps) {
           <div className="booking-grid">
             <div className="booking-card">
               <h3>{t.booking.bookingCta}</h3>
-              <p>{t.booking.orDivider}</p>
               <a
                 href={t.booking.bookingUrl}
                 target="_blank"
@@ -129,8 +129,11 @@ export default function HomePage({ locale }: HomePageProps) {
             </div>
 
             <div className="booking-card">
-              <h3>{t.booking.formTitle}</h3>
-              <BookingForm fields={t.booking.fields} formNote={t.booking.formNote} />
+              <h3>{t.booking.directTitle}</h3>
+              <p>{t.booking.directParagraph}</p>
+              <Link href={localePath(locale, '/contact')} className="btn btn-primary">
+                {t.booking.directCta}
+              </Link>
             </div>
           </div>
         </div>

@@ -1,15 +1,22 @@
 import Link from 'next/link';
 import { locales, localeNames, localePath, type Locale } from '@/lib/i18n';
 import { nav } from '@/data/nav';
+import MobileMenu from './MobileMenu';
 
 interface SiteHeaderProps {
   locale: Locale;
-  currentPage: 'home' | 'explore';
+  currentPage: 'home' | 'explore' | 'contact';
 }
+
+const pageToPath: Record<SiteHeaderProps['currentPage'], string> = {
+  home: '/',
+  explore: '/explore',
+  contact: '/contact',
+};
 
 export default function SiteHeader({ locale, currentPage }: SiteHeaderProps) {
   const t = nav[locale];
-  const path = currentPage === 'home' ? '/' : '/explore';
+  const path = pageToPath[currentPage];
 
   return (
     <header className="site-header">
@@ -31,6 +38,12 @@ export default function SiteHeader({ locale, currentPage }: SiteHeaderProps) {
           >
             {t.explore}
           </Link>
+          <Link
+            href={localePath(locale, '/contact')}
+            className={currentPage === 'contact' ? 'is-active' : ''}
+          >
+            {t.contact}
+          </Link>
         </nav>
 
         <div className="site-header__actions">
@@ -50,6 +63,7 @@ export default function SiteHeader({ locale, currentPage }: SiteHeaderProps) {
           <Link href={`${localePath(locale, '/')}#booking`} className="btn btn-primary btn--small">
             {t.bookNow}
           </Link>
+          <MobileMenu locale={locale} currentPage={currentPage} />
         </div>
       </div>
     </header>

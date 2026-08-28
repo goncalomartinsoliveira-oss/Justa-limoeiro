@@ -5,6 +5,7 @@ export interface NavDict {
   tagline: string;
   home: string;
   explore: string;
+  contact: string;
   bookNow: string;
   footerRights: string;
   footerLocation: string;
@@ -17,6 +18,7 @@ export const nav: Record<Locale, NavDict> = {
     tagline: 'Alojamento Local · Santa Justa, Coruche',
     home: 'Início',
     explore: 'Pontos de Interesse',
+    contact: 'Contactos',
     bookNow: 'Reservar',
     footerRights: 'Todos os direitos reservados.',
     footerLocation: 'Santa Justa, Coruche — Portugal',
@@ -27,6 +29,7 @@ export const nav: Record<Locale, NavDict> = {
     tagline: 'Local Guesthouse · Santa Justa, Coruche',
     home: 'Home',
     explore: 'Places to Visit',
+    contact: 'Contact',
     bookNow: 'Book Now',
     footerRights: 'All rights reserved.',
     footerLocation: 'Santa Justa, Coruche — Portugal',
@@ -37,6 +40,7 @@ export const nav: Record<Locale, NavDict> = {
     tagline: 'Alojamiento Local · Santa Justa, Coruche',
     home: 'Inicio',
     explore: 'Puntos de Interés',
+    contact: 'Contacto',
     bookNow: 'Reservar',
     footerRights: 'Todos los derechos reservados.',
     footerLocation: 'Santa Justa, Coruche — Portugal',

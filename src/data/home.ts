@@ -37,19 +37,9 @@ export interface HomeContent {
     paragraph: string;
     bookingCta: string;
     bookingUrl: string;
-    orDivider: string;
-    formTitle: string;
-    formNote: string;
-    fields: {
-      name: string;
-      email: string;
-      phone: string;
-      checkIn: string;
-      checkOut: string;
-      guests: string;
-      message: string;
-      submit: string;
-    };
+    directTitle: string;
+    directParagraph: string;
+    directCta: string;
   };
 }
 
@@ -114,20 +104,10 @@ export const home: Record<Locale, HomeContent> = {
         'Pode reservar diretamente através do Booking.com ou contactar-nos para combinarmos os detalhes da sua estadia.',
       bookingCta: 'Ver Disponibilidade no Booking.com',
       bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.pt-pt.html',
-      orDivider: 'ou contacte-nos diretamente',
-      formTitle: 'Pedido de Reserva Direta',
-      formNote:
-        'Preencha o formulário e entraremos em contacto para confirmar a sua estadia. (Formulário de contacto — brevemente ligado ao envio automático de email.)',
-      fields: {
-        name: 'Nome',
-        email: 'Email',
-        phone: 'Telefone',
-        checkIn: 'Data de Check-in',
-        checkOut: 'Data de Check-out',
-        guests: 'Número de Hóspedes',
-        message: 'Mensagem (opcional)',
-        submit: 'Enviar Pedido',
-      },
+      directTitle: 'Prefere reservar diretamente?',
+      directParagraph:
+        'Preencha o nosso formulário de contacto e entraremos em contacto para confirmar a sua estadia.',
+      directCta: 'Ir para Contactos',
     },
   },
 
@@ -191,20 +171,10 @@ export const home: Record<Locale, HomeContent> = {
         'You can book directly through Booking.com, or reach out to us to arrange the details of your stay.',
       bookingCta: 'Check Availability on Booking.com',
       bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.en-gb.html',
-      orDivider: 'or contact us directly',
-      formTitle: 'Direct Booking Request',
-      formNote:
-        'Fill in the form and we will get back to you to confirm your stay. (Contact form — automatic email sending coming soon.)',
-      fields: {
-        name: 'Name',
-        email: 'Email',
-        phone: 'Phone',
-        checkIn: 'Check-in Date',
-        checkOut: 'Check-out Date',
-        guests: 'Number of Guests',
-        message: 'Message (optional)',
-        submit: 'Send Request',
-      },
+      directTitle: 'Prefer to book directly?',
+      directParagraph:
+        'Fill in our contact form and we will get back to you to confirm your stay.',
+      directCta: 'Go to Contact',
     },
   },
 
@@ -268,20 +238,10 @@ export const home: Record<Locale, HomeContent> = {
         'Puede reservar directamente a través de Booking.com o contactarnos para acordar los detalles de su estancia.',
       bookingCta: 'Ver Disponibilidad en Booking.com',
       bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.es.html',
-      orDivider: 'o contáctenos directamente',
-      formTitle: 'Solicitud de Reserva Directa',
-      formNote:
-        'Complete el formulario y nos pondremos en contacto para confirmar su estancia. (Formulario de contacto — envío automático de email próximamente.)',
-      fields: {
-        name: 'Nombre',
-        email: 'Email',
-        phone: 'Teléfono',
-        checkIn: 'Fecha de Entrada',
-        checkOut: 'Fecha de Salida',
-        guests: 'Número de Huéspedes',
-        message: 'Mensaje (opcional)',
-        submit: 'Enviar Solicitud',
-      },
+      directTitle: '¿Prefiere reservar directamente?',
+      directParagraph:
+        'Complete nuestro formulario de contacto y nos pondremos en contacto para confirmar su estancia.',
+      directCta: 'Ir a Contacto',
     },
   },
 };

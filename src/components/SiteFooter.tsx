@@ -21,6 +21,7 @@ export default function SiteFooter({ locale }: SiteFooterProps) {
         <nav className="site-footer__nav" aria-label="Footer navigation">
           <Link href={localePath(locale, '/')}>{t.home}</Link>
           <Link href={localePath(locale, '/explore')}>{t.footerExploreMore}</Link>
+          <Link href={localePath(locale, '/contact')}>{t.contact}</Link>
         </nav>
 
         <p className="site-footer__rights">
