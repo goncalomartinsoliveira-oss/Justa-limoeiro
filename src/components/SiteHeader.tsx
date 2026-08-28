@@ -1,3 +1,6 @@
+'use client';
+
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { locales, localeNames, localePath, type Locale } from '@/lib/i18n';
 import { nav } from '@/data/nav';
@@ -17,9 +20,30 @@ const pageToPath: Record<SiteHeaderProps['currentPage'], string> = {
 export default function SiteHeader({ locale, currentPage }: SiteHeaderProps) {
   const t = nav[locale];
   const path = pageToPath[currentPage];
+  const isHome = currentPage === 'home';
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    if (!isHome) return;
+    const onScroll = () => setScrolled(window.scrollY > 80);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [isHome]);
+
+  const overlay = isHome && !scrolled;
+
+  const headerClassName = [
+    'site-header',
+    isHome && 'site-header--fixed',
+    overlay && 'site-header--transparent',
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   return (
-    <header className="site-header">
+    <header className={headerClassName}>
       <div className="container site-header__inner">
         <Link href={localePath(locale, '/')} className="site-header__brand">
           {t.siteName}
@@ -63,7 +87,7 @@ export default function SiteHeader({ locale, currentPage }: SiteHeaderProps) {
           <Link href={`${localePath(locale, '/')}#booking`} className="btn btn-primary btn--small">
             {t.bookNow}
           </Link>
-          <MobileMenu locale={locale} currentPage={currentPage} />
+          <MobileMenu locale={locale} currentPage={currentPage} light={overlay} />
         </div>
       </div>
     </header>

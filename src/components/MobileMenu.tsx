@@ -9,6 +9,7 @@ import { nav } from '@/data/nav';
 interface MobileMenuProps {
   locale: Locale;
   currentPage: 'home' | 'explore' | 'contact';
+  light?: boolean;
 }
 
 const pageToPath: Record<MobileMenuProps['currentPage'], string> = {
@@ -17,7 +18,7 @@ const pageToPath: Record<MobileMenuProps['currentPage'], string> = {
   contact: '/contact',
 };
 
-export default function MobileMenu({ locale, currentPage }: MobileMenuProps) {
+export default function MobileMenu({ locale, currentPage, light }: MobileMenuProps) {
   const [open, setOpen] = useState(false);
   const t = nav[locale];
   const path = pageToPath[currentPage];
@@ -43,7 +44,7 @@ export default function MobileMenu({ locale, currentPage }: MobileMenuProps) {
       {!open && (
         <button
           type="button"
-          className="mobile-menu__toggle"
+          className={`mobile-menu__toggle${light ? ' mobile-menu__toggle--light' : ''}`}
           aria-expanded={false}
           aria-controls="mobile-menu-panel"
           aria-label="Abrir menu"

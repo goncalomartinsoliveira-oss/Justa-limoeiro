@@ -165,9 +165,44 @@ h1, h2, h3, h4 {
   position: sticky;
   top: 0;
   z-index: 50;
+  width: 100%;
   background: rgba(250, 245, 236, 0.92);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--color-sand-dark);
+  transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.site-header--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.site-header--transparent {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+  backdrop-filter: none;
+  border-bottom-color: transparent;
+}
+
+.site-header--transparent .site-header__brand {
+  color: var(--color-white);
+}
+
+.site-header--transparent .site-header__nav a {
+  color: var(--color-white);
+}
+
+.site-header--transparent .site-header__nav a.is-active,
+.site-header--transparent .site-header__nav a:hover {
+  border-color: var(--color-white);
+}
+
+.site-header--transparent .site-header__langs a {
+  color: var(--color-white);
+}
+
+.site-header--transparent .mobile-menu__toggle--light span {
+  background: var(--color-white);
 }
 
 .site-header__inner {
