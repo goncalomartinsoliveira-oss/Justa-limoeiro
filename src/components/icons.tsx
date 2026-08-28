@@ -161,7 +161,7 @@ export function IconFamily(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export function IconHeart(props: React.SVGProps<SVGSVGElement>) {
+export function IconGroup(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -173,7 +173,12 @@ export function IconHeart(props: React.SVGProps<SVGSVGElement>) {
       aria-hidden="true"
       {...props}
     >
-      <path d="M12 20s-7.5-4.6-9.6-9.1C1 7.7 2.4 4.7 5.4 4c2-.5 3.9.4 4.6 2 .7-1.6 2.6-2.5 4.6-2 3 .7 4.4 3.7 3 6.9C19.5 15.4 12 20 12 20z" />
+      <circle cx="6" cy="8.5" r="2" />
+      <circle cx="12" cy="7" r="2.3" />
+      <circle cx="18" cy="8.5" r="2" />
+      <path d="M2.5 19c.3-2.6 1.7-4.2 3.5-4.2s3.2 1.6 3.5 4.2" />
+      <path d="M8 19.3c.35-3 2-4.8 4-4.8s3.65 1.8 4 4.8" />
+      <path d="M14.5 19c.3-2.6 1.7-4.2 3.5-4.2s3.2 1.6 3.5 4.2" />
     </svg>
   );
 }

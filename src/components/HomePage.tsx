@@ -8,7 +8,7 @@ import {
   IconBed,
   IconExpand,
   IconFamily,
-  IconHeart,
+  IconGroup,
   IconHome,
   IconCalendar,
   IconPool,
@@ -28,7 +28,7 @@ const factIcons = {
 const perfectForIcons = {
   weekend: IconCalendar,
   family: IconFamily,
-  romantic: IconHeart,
+  friends: IconGroup,
 } as const;
 
 interface HomePageProps {

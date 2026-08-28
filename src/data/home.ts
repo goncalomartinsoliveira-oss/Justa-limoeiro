@@ -33,7 +33,7 @@ export interface HomeContent {
   perfectFor: {
     eyebrow: string;
     title: string;
-    items: { icon: 'weekend' | 'family' | 'romantic'; label: string }[];
+    items: { icon: 'weekend' | 'family' | 'friends'; label: string }[];
   };
   amenities: {
     eyebrow: string;
@@ -71,7 +71,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Santa Justa, Coruche',
       title: 'Pátio Justa Limoeiro',
       subtitle:
-        'Uma casa branca, um limoeiro no quintal e uma piscina só para si, no refúgio tranquilo do Ribatejo.',
+        'Uma casa branca, um limoeiro no quintal e espaço para toda a família ou grupo de amigos, no refúgio tranquilo do Ribatejo.',
       ctaPrimary: 'Reservar Agora',
       ctaSecondary: 'Conhecer a Casa',
     },
@@ -80,7 +80,7 @@ export const home: Record<Locale, HomeContent> = {
       title: 'Uma casa com nome de família e sabor a limão',
       paragraphs: [
         'O Pátio Justa Limoeiro nasce em Santa Justa, uma pequena localidade do concelho de Coruche, no coração do Ribatejo. O nome conta a sua própria história: "Justa" da terra que o acolhe, "Limoeiro" da árvore que ainda hoje dá sombra e fruto no quintal.',
-        'Situada no coração do Ribatejo, entre lezírias férteis e a proximidade do rio Tejo, a casa oferece serenidade e um contacto genuíno com as tradições rurais da região, um refúgio pensado para pausas de fim de semana, férias em família ou escapadinhas a dois.',
+        'Situada no coração do Ribatejo, entre lezírias férteis e a proximidade do rio Tejo, a casa oferece serenidade e um contacto genuíno com as tradições rurais da região, ideal para férias em família, encontros entre amigos ou celebrações em grupo.',
         'Já Coruche, amplamente conhecida como a Capital Mundial da Cortiça, envolve a casa em paisagens de montados inspiradoras, enquanto a pitoresca aldeia de Santa Justa, a poucos minutos, mantém viva a simplicidade e a autenticidade da vida no campo.',
       ],
     },
@@ -139,7 +139,7 @@ export const home: Record<Locale, HomeContent> = {
       items: [
         { icon: 'weekend', label: 'Pausas de fim de semana' },
         { icon: 'family', label: 'Férias em família' },
-        { icon: 'romantic', label: 'Escapadinhas a dois' },
+        { icon: 'friends', label: 'Encontros entre amigos' },
       ],
     },
     amenities: {
@@ -187,7 +187,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Santa Justa, Coruche',
       title: 'Pátio Justa Limoeiro',
       subtitle:
-        'A whitewashed house, a lemon tree in the garden, and a pool all to yourself, in a quiet retreat in the Ribatejo countryside.',
+        'A whitewashed house, a lemon tree in the garden, and room for the whole family or a group of friends, in a quiet retreat in the Ribatejo countryside.',
       ctaPrimary: 'Book Now',
       ctaSecondary: 'Discover the House',
     },
@@ -196,7 +196,7 @@ export const home: Record<Locale, HomeContent> = {
       title: 'A house named after its land and its tree',
       paragraphs: [
         'Pátio Justa Limoeiro takes its name from Santa Justa, a small village in the Coruche municipality, in the heart of the Ribatejo region. Its name tells its own story: "Justa" from the land that holds it, "Limoeiro" from the tree that still gives shade and fruit in the backyard.',
-        'Set in the heart of the Ribatejo, among fertile lezíria plains and close to the Tagus river, the house offers serenity and a genuine connection to the region\'s rural traditions, a retreat built for weekend breaks, family holidays or romantic getaways.',
+        'Set in the heart of the Ribatejo, among fertile lezíria plains and close to the Tagus river, the house offers serenity and a genuine connection to the region\'s rural traditions, ideal for family holidays, gatherings with friends or group celebrations.',
         'Coruche itself, widely known as the World Capital of Cork, surrounds the house with inspiring cork-oak landscapes, while the picturesque village of Santa Justa, just minutes away, keeps the simplicity and authenticity of country life alive.',
       ],
     },
@@ -255,7 +255,7 @@ export const home: Record<Locale, HomeContent> = {
       items: [
         { icon: 'weekend', label: 'Weekend breaks' },
         { icon: 'family', label: 'Family holidays' },
-        { icon: 'romantic', label: 'Romantic getaways' },
+        { icon: 'friends', label: 'Gatherings with friends' },
       ],
     },
     amenities: {
@@ -303,7 +303,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Santa Justa, Coruche',
       title: 'Pátio Justa Limoeiro',
       subtitle:
-        'Una casa encalada, un limonero en el jardín y una piscina solo para usted, en un refugio tranquilo en el Ribatejo.',
+        'Una casa encalada, un limonero en el jardín y espacio para toda la familia o un grupo de amigos, en un refugio tranquilo en el Ribatejo.',
       ctaPrimary: 'Reservar Ahora',
       ctaSecondary: 'Conocer la Casa',
     },
@@ -312,7 +312,7 @@ export const home: Record<Locale, HomeContent> = {
       title: 'Una casa con nombre de familia y sabor a limón',
       paragraphs: [
         'Pátio Justa Limoeiro toma su nombre de Santa Justa, una pequeña localidad del municipio de Coruche, en el corazón del Ribatejo. Su nombre cuenta su propia historia: "Justa" por la tierra que la acoge, "Limoeiro" por el árbol que todavía hoy da sombra y fruto en el jardín.',
-        'Situada en el corazón del Ribatejo, entre fértiles llanuras de "lezíria" y cerca del río Tajo, la casa ofrece serenidad y un contacto genuino con las tradiciones rurales de la región, un refugio pensado para escapadas de fin de semana, vacaciones en familia o momentos románticos en pareja.',
+        'Situada en el corazón del Ribatejo, entre fértiles llanuras de "lezíria" y cerca del río Tajo, la casa ofrece serenidad y un contacto genuino con las tradiciones rurales de la región, ideal para vacaciones en familia, encuentros entre amigos o celebraciones en grupo.',
         'El propio municipio de Coruche, ampliamente conocido como la Capital Mundial del Corcho, rodea la casa de paisajes de alcornocales, mientras que el pintoresco pueblo de Santa Justa, a pocos minutos, mantiene viva la sencillez y autenticidad de la vida en el campo.',
       ],
     },
@@ -371,7 +371,7 @@ export const home: Record<Locale, HomeContent> = {
       items: [
         { icon: 'weekend', label: 'Escapadas de fin de semana' },
         { icon: 'family', label: 'Vacaciones en familia' },
-        { icon: 'romantic', label: 'Escapadas en pareja' },
+        { icon: 'friends', label: 'Encuentros entre amigos' },
       ],
     },
     amenities: {
