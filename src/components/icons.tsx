@@ -178,6 +178,14 @@ export function IconHeart(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+export function IconStar(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M12 2.5l2.9 6.05 6.6.77-4.9 4.55 1.28 6.53L12 16.9l-5.88 3.5 1.28-6.53-4.9-4.55 6.6-.77z" />
+    </svg>
+  );
+}
+
 export function IconMail(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg

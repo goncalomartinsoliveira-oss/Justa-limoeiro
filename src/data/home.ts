@@ -41,6 +41,12 @@ export interface HomeContent {
     paragraph: string;
     address: string;
   };
+  socialProof: {
+    eyebrow: string;
+    title: string;
+    text: string;
+    cta: string;
+  };
   booking: {
     eyebrow: string;
     title: string;
@@ -141,6 +147,12 @@ export const home: Record<Locale, HomeContent> = {
       paragraph:
         'A casa fica em Santa Justa, no concelho de Coruche, a cerca de 15 minutos de carro da Barragem de Montargil, uma das maiores albufeiras de Portugal continental e ponto de partida para praias fluviais, desportos aquáticos e passeios pela natureza. Consulte a página de Pontos de Interesse para mais sugestões da região.',
       address: 'Rua do Faial, Santa Justa, Coruche',
+    },
+    socialProof: {
+      eyebrow: 'Avaliações',
+      title: 'Avaliação Excecional no Booking.com',
+      text: 'Os hóspedes que já ficaram no Pátio Justa Limoeiro partilham a sua experiência no Booking.com.',
+      cta: 'Ver Avaliações no Booking.com',
     },
     booking: {
       eyebrow: 'Reservas',
@@ -244,6 +256,12 @@ export const home: Record<Locale, HomeContent> = {
         'The house is located in Santa Justa, in the Coruche municipality, about a 15-minute drive from the Montargil Dam, one of mainland Portugal’s largest reservoirs and a gateway to river beaches, water sports and nature walks. Check the Places to Visit page for more suggestions around the region.',
       address: 'Rua do Faial, Santa Justa, Coruche, Portugal',
     },
+    socialProof: {
+      eyebrow: 'Reviews',
+      title: 'Exceptional Rating on Booking.com',
+      text: 'Guests who have stayed at Pátio Justa Limoeiro share their experience on Booking.com.',
+      cta: 'Read Reviews on Booking.com',
+    },
     booking: {
       eyebrow: 'Booking',
       title: "Let's plan your stay",
@@ -345,6 +363,12 @@ export const home: Record<Locale, HomeContent> = {
       paragraph:
         'La casa está ubicada en Santa Justa, municipio de Coruche, a unos 15 minutos en coche de la Presa de Montargil, uno de los mayores embalses de Portugal continental y punto de partida hacia playas fluviales, deportes acuáticos y paseos por la naturaleza. Consulte la página de Puntos de Interés para más sugerencias de la región.',
       address: 'Rua do Faial, Santa Justa, Coruche, Portugal',
+    },
+    socialProof: {
+      eyebrow: 'Opiniones',
+      title: 'Valoración Excepcional en Booking.com',
+      text: 'Los huéspedes que ya se han alojado en Pátio Justa Limoeiro comparten su experiencia en Booking.com.',
+      cta: 'Ver Opiniones en Booking.com',
     },
     booking: {
       eyebrow: 'Reservas',

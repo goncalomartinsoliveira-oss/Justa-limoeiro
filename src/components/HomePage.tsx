@@ -11,6 +11,7 @@ import {
   IconHome,
   IconCalendar,
   IconPool,
+  IconStar,
   IconWifi,
 } from './icons';
 
@@ -176,6 +177,29 @@ export default function HomePage({ locale }: HomePageProps) {
               {t.location.address}
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="section section--tight">
+        <div className="container social-proof">
+          <span className="social-proof__stars">
+            <IconStar />
+            <IconStar />
+            <IconStar />
+            <IconStar />
+            <IconStar />
+          </span>
+          <span className="eyebrow">{t.socialProof.eyebrow}</span>
+          <h2>{t.socialProof.title}</h2>
+          <p>{t.socialProof.text}</p>
+          <a
+            href={t.booking.bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-underline"
+          >
+            {t.socialProof.cta}
+          </a>
         </div>
       </section>
 
