@@ -687,6 +687,7 @@ h1, h2, h3, h4 {
   grid-template-columns: repeat(2, 1fr);
   gap: 0.9rem 2rem;
   max-width: 720px;
+  list-style: none;
 }
 
 .amenities-list li {
