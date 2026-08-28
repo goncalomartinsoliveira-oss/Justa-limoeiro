@@ -91,7 +91,8 @@ h1, h2, h3, h4 {
 }
 
 .section--tight {
-  padding: var(--space-lg) 0;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
 }
 
 .section--sand {
@@ -357,7 +358,8 @@ h1, h2, h3, h4 {
 
 .hero__content {
   position: relative;
-  padding: var(--space-xl) 0 var(--space-lg);
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-lg);
 }
 
 .hero__eyebrow {
@@ -639,7 +641,8 @@ h1, h2, h3, h4 {
 /* ---------- Points of Interest page ---------- */
 
 .poi-hero {
-  padding: var(--space-lg) 0 var(--space-md);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-md);
   text-align: center;
 }
 
