@@ -18,6 +18,7 @@ export default function HomePage({ locale }: HomePageProps) {
       <section className="hero">
         <div className="hero__media">
           <img src="/images/placeholder-hero.svg" alt="" />
+          <span className="hero__placeholder-badge">Foto a substituir</span>
         </div>
         <div className="container hero__content">
           <span className="eyebrow hero__eyebrow">{t.hero.eyebrow}</span>
