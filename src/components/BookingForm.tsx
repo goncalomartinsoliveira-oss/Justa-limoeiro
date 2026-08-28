@@ -1,9 +1,9 @@
 'use client';
 
-import type { HomeContent } from '@/data/home';
+import type { ContactContent } from '@/data/contact';
 
 interface BookingFormProps {
-  fields: HomeContent['booking']['fields'];
+  fields: ContactContent['fields'];
   formNote: string;
 }
 

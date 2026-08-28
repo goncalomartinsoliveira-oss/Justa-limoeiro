@@ -17,7 +17,7 @@ export interface HomeContent {
   spaces: {
     eyebrow: string;
     title: string;
-    items: { image: string; alt: string; caption: string }[];
+    items: { image: string; alt: string; caption: string; description: string }[];
   };
   amenities: {
     eyebrow: string;
@@ -57,8 +57,9 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Bem-vindo',
       title: 'Uma casa com nome de família e sabor a limão',
       paragraphs: [
-        'O Pátio Justa Limoeiro nasce em Santa Justa, uma pequena localidade do concelho de Coruche, no coração do Ribatejo. O nome conta a sua própria história: "Justa" da terra que a acolhe, "Limoeiro" da árvore centenária que ainda hoje dá sombra e fruto no quintal.',
-        'É uma casa pensada para quem procura pausar — pátio interior, piscina exterior e um jardim tropical onde o limoeiro é protagonista. Todo o espaço é só seu durante a estadia, longe do ruído e perto do essencial.',
+        'O Pátio Justa Limoeiro nasce em Santa Justa, uma pequena localidade do concelho de Coruche, no coração do Ribatejo. O nome conta a sua própria história: "Justa" da terra que o acolhe, "Limoeiro" da árvore que ainda hoje dá sombra e fruto no quintal.',
+        'Situada no coração do Ribatejo, entre lezírias férteis e a proximidade do rio Tejo, a casa oferece serenidade e um contacto genuíno com as tradições rurais da região — um refúgio pensado para pausas de fim de semana, férias em família ou escapadinhas a dois.',
+        'Já Coruche — amplamente conhecida como a Capital Mundial da Cortiça — envolve a casa em paisagens de montados inspiradoras, enquanto a pitoresca aldeia de Santa Justa, a poucos minutos, mantém viva a simplicidade e a autenticidade da vida no campo.',
       ],
     },
     facts: [
@@ -71,16 +72,34 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Os Espaços',
       title: 'Cada canto pensado para o descanso',
       items: [
-        { image: '/images/placeholder-pool.svg', alt: 'Piscina exterior com espreguiçadeiras', caption: 'Piscina & Pátio' },
-        { image: '/images/placeholder-garden.svg', alt: 'Jardim tropical com o limoeiro', caption: 'Jardim & Limoeiro' },
-        { image: '/images/placeholder-outdoor-kitchen.svg', alt: 'Zona exterior coberta com churrasco', caption: 'Zona Exterior Coberta' },
+        {
+          image: '/images/placeholder-pool.svg',
+          alt: 'Piscina exterior com espreguiçadeiras',
+          caption: 'Piscina & Pátio',
+          description:
+            'A piscina é o convite perfeito para os dias mais quentes — um mergulho refrescante ou uns momentos de descanso à beira-água, na tranquilidade do pátio.',
+        },
+        {
+          image: '/images/placeholder-garden.svg',
+          alt: 'Jardim tropical com o limoeiro',
+          caption: 'Jardim & Limoeiro',
+          description:
+            'No jardim, um limoeiro robusto e cheio de vida oferece sombra natural, aroma fresco e o convite irresistível a colher um limão acabado de amadurecer.',
+        },
+        {
+          image: '/images/placeholder-outdoor-kitchen.svg',
+          alt: 'Zona exterior coberta com churrasco',
+          caption: 'Zona Exterior Coberta',
+          description:
+            'A churrasqueira está à disposição para refeições ao ar livre, perfeitas para convívios em família ou entre amigos, acompanhadas pela tranquilidade da paisagem ribatejana.',
+        },
       ],
     },
     amenities: {
       eyebrow: 'Comodidades',
       title: 'Tudo o que precisa, nada a mais',
       intro:
-        'Uma seleção simples e cuidada de comodidades para tornar a estadia confortável do início ao fim.',
+        'Um espaço acolhedor, luminoso e funcional, onde o conforto moderno se combina com o charme rural da região — dentro e fora de casa.',
       items: [
         'Piscina exterior privada',
         'Jardim com limoeiro e plantas tropicais',
@@ -124,8 +143,9 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Welcome',
       title: 'A house named after its land and its tree',
       paragraphs: [
-        'Pátio Justa Limoeiro sits in Santa Justa, a small village in the Coruche municipality, in the heart of the Ribatejo region. Its name tells its own story: "Justa" from the land that holds it, "Limoeiro" from the century-old lemon tree that still gives shade and fruit in the backyard.',
-        'It is a house built for slowing down — an inner courtyard, an outdoor pool, and a tropical garden where the lemon tree takes center stage. The whole space is yours alone during your stay, far from the noise and close to what matters.',
+        'Pátio Justa Limoeiro takes its name from Santa Justa, a small village in the Coruche municipality, in the heart of the Ribatejo region. Its name tells its own story: "Justa" from the land that holds it, "Limoeiro" from the tree that still gives shade and fruit in the backyard.',
+        'Set in the heart of the Ribatejo, among fertile lezíria plains and close to the Tagus river, the house offers serenity and a genuine connection to the region\'s rural traditions — a retreat built for weekend breaks, family holidays or romantic getaways.',
+        'Coruche itself — widely known as the World Capital of Cork — surrounds the house with inspiring cork-oak landscapes, while the picturesque village of Santa Justa, just minutes away, keeps the simplicity and authenticity of country life alive.',
       ],
     },
     facts: [
@@ -138,16 +158,34 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'The Spaces',
       title: 'Every corner made for resting',
       items: [
-        { image: '/images/placeholder-pool.svg', alt: 'Outdoor pool with sun loungers', caption: 'Pool & Courtyard' },
-        { image: '/images/placeholder-garden.svg', alt: 'Tropical garden with the lemon tree', caption: 'Garden & Lemon Tree' },
-        { image: '/images/placeholder-outdoor-kitchen.svg', alt: 'Covered outdoor barbecue area', caption: 'Covered Outdoor Area' },
+        {
+          image: '/images/placeholder-pool.svg',
+          alt: 'Outdoor pool with sun loungers',
+          caption: 'Pool & Courtyard',
+          description:
+            'The pool is the perfect invitation on warmer days — a refreshing dip or a few quiet moments by the water, in the calm of the courtyard.',
+        },
+        {
+          image: '/images/placeholder-garden.svg',
+          alt: 'Tropical garden with the lemon tree',
+          caption: 'Garden & Lemon Tree',
+          description:
+            'In the garden, a vigorous, thriving lemon tree offers natural shade, a fresh scent, and the irresistible invitation to pick a lemon straight from the branch.',
+        },
+        {
+          image: '/images/placeholder-outdoor-kitchen.svg',
+          alt: 'Covered outdoor barbecue area',
+          caption: 'Covered Outdoor Area',
+          description:
+            'The barbecue is ready for meals in the open air — perfect for gatherings with family or friends, accompanied by the calm of the Ribatejo landscape.',
+        },
       ],
     },
     amenities: {
       eyebrow: 'Amenities',
       title: 'Everything you need, nothing more',
       intro:
-        'A simple, carefully chosen selection of amenities to make your stay comfortable from start to finish.',
+        'A welcoming, bright and functional space, where modern comfort meets the rural charm of the region — indoors and out.',
       items: [
         'Private outdoor pool',
         'Garden with lemon tree and tropical plants',
@@ -191,8 +229,9 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Bienvenido',
       title: 'Una casa con nombre de familia y sabor a limón',
       paragraphs: [
-        'Pátio Justa Limoeiro se encuentra en Santa Justa, una pequeña localidad del municipio de Coruche, en el corazón del Ribatejo. Su nombre cuenta su propia historia: "Justa" por la tierra que la acoge, "Limoeiro" por el limonero centenario que todavía hoy da sombra y fruto en el jardín.',
-        'Es una casa pensada para quienes buscan hacer una pausa — patio interior, piscina exterior y un jardín tropical donde el limonero es el protagonista. Todo el espacio es solo suyo durante su estancia, lejos del ruido y cerca de lo esencial.',
+        'Pátio Justa Limoeiro toma su nombre de Santa Justa, una pequeña localidad del municipio de Coruche, en el corazón del Ribatejo. Su nombre cuenta su propia historia: "Justa" por la tierra que la acoge, "Limoeiro" por el árbol que todavía hoy da sombra y fruto en el jardín.',
+        'Situada en el corazón del Ribatejo, entre fértiles llanuras de "lezíria" y cerca del río Tajo, la casa ofrece serenidad y un contacto genuino con las tradiciones rurales de la región — un refugio pensado para escapadas de fin de semana, vacaciones en familia o momentos románticos en pareja.',
+        'El propio municipio de Coruche — ampliamente conocido como la Capital Mundial del Corcho — rodea la casa de paisajes de alcornocales, mientras que el pintoresco pueblo de Santa Justa, a pocos minutos, mantiene viva la sencillez y autenticidad de la vida en el campo.',
       ],
     },
     facts: [
@@ -205,16 +244,34 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Los Espacios',
       title: 'Cada rincón pensado para el descanso',
       items: [
-        { image: '/images/placeholder-pool.svg', alt: 'Piscina exterior con tumbonas', caption: 'Piscina y Patio' },
-        { image: '/images/placeholder-garden.svg', alt: 'Jardín tropical con el limonero', caption: 'Jardín y Limonero' },
-        { image: '/images/placeholder-outdoor-kitchen.svg', alt: 'Zona exterior cubierta con barbacoa', caption: 'Zona Exterior Cubierta' },
+        {
+          image: '/images/placeholder-pool.svg',
+          alt: 'Piscina exterior con tumbonas',
+          caption: 'Piscina y Patio',
+          description:
+            'La piscina es la invitación perfecta en los días más calurosos — un chapuzón refrescante o unos momentos de calma junto al agua, en la tranquilidad del patio.',
+        },
+        {
+          image: '/images/placeholder-garden.svg',
+          alt: 'Jardín tropical con el limonero',
+          caption: 'Jardín y Limonero',
+          description:
+            'En el jardín, un limonero vigoroso y lleno de vida ofrece sombra natural, un aroma fresco y la invitación irresistible a coger un limón recién madurado.',
+        },
+        {
+          image: '/images/placeholder-outdoor-kitchen.svg',
+          alt: 'Zona exterior cubierta con barbacoa',
+          caption: 'Zona Exterior Cubierta',
+          description:
+            'La barbacoa está lista para comidas al aire libre, perfectas para reuniones en familia o entre amigos, acompañadas por la tranquilidad del paisaje ribatejano.',
+        },
       ],
     },
     amenities: {
       eyebrow: 'Comodidades',
       title: 'Todo lo que necesita, nada más',
       intro:
-        'Una selección simple y cuidada de comodidades para hacer su estancia cómoda de principio a fin.',
+        'Un espacio acogedor, luminoso y funcional, donde el confort moderno se combina con el encanto rural de la región — dentro y fuera de casa.',
       items: [
         'Piscina exterior privada',
         'Jardín con limonero y plantas tropicales',

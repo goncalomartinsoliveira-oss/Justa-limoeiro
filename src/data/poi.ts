@@ -85,20 +85,37 @@ export const poiEntries: PoiEntry[] = [
     },
   },
   {
+    slug: 'coruche-capital-da-cortica',
+    category: 'culture',
+    image: '/images/placeholder-cork.svg',
+    confirmed: true,
+    distance: { pt: 'A poucos minutos', en: 'A few minutes away', es: 'A pocos minutos' },
+    name: {
+      pt: 'Coruche, Capital Mundial da Cortiça',
+      en: 'Coruche, World Capital of Cork',
+      es: 'Coruche, Capital Mundial del Corcho',
+    },
+    description: {
+      pt: 'Rodeado por extensos montados de sobreiro, o concelho de Coruche é amplamente reconhecido como a Capital Mundial da Cortiça — paisagens naturais inspiradoras e um património cultural rico, a poucos minutos da casa.',
+      en: 'Surrounded by vast cork-oak groves, the Coruche municipality is widely recognised as the World Capital of Cork — inspiring natural landscapes and a rich cultural heritage, just minutes from the house.',
+      es: 'Rodeado de extensos alcornocales, el municipio de Coruche es ampliamente reconocido como la Capital Mundial del Corcho — paisajes naturales inspiradores y un rico patrimonio cultural, a pocos minutos de la casa.',
+    },
+  },
+  {
     slug: 'em-preparacao-cultura',
     category: 'culture',
     image: '/images/placeholder-poi.svg',
     confirmed: false,
     distance: { pt: 'A confirmar', en: 'To be confirmed', es: 'Por confirmar' },
     name: {
-      pt: 'Coruche e património local',
-      en: 'Coruche and local heritage',
-      es: 'Coruche y patrimonio local',
+      pt: 'Mais património local',
+      en: 'More local heritage',
+      es: 'Más patrimonio local',
     },
     description: {
-      pt: 'Em breve: recomendações de museus, ermidas e locais históricos do concelho de Coruche.',
-      en: 'Coming soon: museum, chapel and historic site recommendations around the Coruche municipality.',
-      es: 'Próximamente: recomendaciones de museos, ermitas y lugares históricos del municipio de Coruche.',
+      pt: 'Em breve: recomendações de museus, ermidas e outros locais históricos do concelho de Coruche.',
+      en: 'Coming soon: museum, chapel and other historic site recommendations around the Coruche municipality.',
+      es: 'Próximamente: recomendaciones de museos, ermitas y otros lugares históricos del municipio de Coruche.',
     },
   },
   {

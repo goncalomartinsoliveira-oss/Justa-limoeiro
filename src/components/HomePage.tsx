@@ -68,8 +68,13 @@ export default function HomePage({ locale }: HomePageProps) {
           <div className="gallery-grid">
             {t.spaces.items.map((item) => (
               <div className="gallery-grid__item" key={item.caption}>
-                <img src={item.image} alt={item.alt} />
-                <span className="gallery-grid__caption">{item.caption}</span>
+                <div className="gallery-grid__media">
+                  <img src={item.image} alt={item.alt} />
+                </div>
+                <div className="gallery-grid__body">
+                  <h3>{item.caption}</h3>
+                  <p>{item.description}</p>
+                </div>
               </div>
             ))}
           </div>
