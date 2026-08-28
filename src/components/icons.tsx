@@ -24,6 +24,14 @@ export function IconInstagram(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+export function IconFacebook(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
+      <path d="M13.5 21v-8.2h2.75l.41-3.2h-3.16V7.55c0-.93.26-1.56 1.59-1.56h1.7V3.14C15.98 3.1 15.06 3 14 3c-2.2 0-3.7 1.34-3.7 3.8v2.8H7.55v3.2H10.3V21h3.2z" />
+    </svg>
+  );
+}
+
 export function IconPhone(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
@@ -225,6 +233,47 @@ export function IconBed(props: React.SVGProps<SVGSVGElement>) {
       <path d="M3 18v2M21 18v2" />
       <path d="M3 13V7a1 1 0 0 1 1-1h6v6" />
       <circle cx="7" cy="9" r="1.2" />
+    </svg>
+  );
+}
+
+export function IconBedDouble(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.6}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M2.5 18v-5a2 2 0 0 1 2-2h15a2 2 0 0 1 2 2v5" />
+      <path d="M2.5 18v2M21.5 18v2" />
+      <path d="M2.5 13V8a1 1 0 0 1 1-1h17a1 1 0 0 1 1 1v5" />
+      <path d="M9 13V9" />
+      <circle cx="6.3" cy="9.6" r="1.1" />
+      <circle cx="12.7" cy="9.6" r="1.1" />
+    </svg>
+  );
+}
+
+export function IconSofaBed(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.6}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M4 12V8.5a1.5 1.5 0 0 1 3 0V11h10V8.5a1.5 1.5 0 0 1 3 0V12" />
+      <path d="M3 12h18v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4z" />
+      <path d="M4.5 17v2.2M19.5 17v2.2" />
     </svg>
   );
 }

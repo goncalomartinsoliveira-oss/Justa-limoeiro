@@ -6,12 +6,14 @@ import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import {
   IconBed,
+  IconBedDouble,
   IconExpand,
   IconFamily,
   IconGroup,
   IconHome,
   IconCalendar,
   IconPool,
+  IconSofaBed,
   IconStar,
   IconWifi,
 } from './icons';
@@ -30,6 +32,8 @@ const perfectForIcons = {
   family: IconFamily,
   friends: IconGroup,
 } as const;
+
+const roomIcons = [IconBed, IconBedDouble, IconSofaBed] as const;
 
 interface HomePageProps {
   locale: Locale;
@@ -122,14 +126,17 @@ export default function HomePage({ locale }: HomePageProps) {
             <p>{t.rooms.intro}</p>
           </div>
           <div className="perfect-for">
-            {t.rooms.items.map((item) => (
-              <div className="perfect-for__item" key={item}>
-                <span className="perfect-for__icon">
-                  <IconBed />
-                </span>
-                <span>{item}</span>
-              </div>
-            ))}
+            {t.rooms.items.map((item, i) => {
+              const Icon = roomIcons[i] ?? IconBed;
+              return (
+                <div className="perfect-for__item" key={item}>
+                  <span className="perfect-for__icon">
+                    <Icon />
+                  </span>
+                  <span>{item}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -137,7 +144,7 @@ export default function HomePage({ locale }: HomePageProps) {
       <section className="section">
         <div className="container split split--reverse">
           <div className="split__media">
-            <img src="/images/placeholder-interior.svg" alt="" />
+            <img src="/images/interior-comfort.jpg" alt="" />
           </div>
           <div className="split__content">
             <span className="eyebrow">{t.interior.eyebrow}</span>
@@ -189,7 +196,7 @@ export default function HomePage({ locale }: HomePageProps) {
       <section className="section section--sand">
         <div className="container split split--reverse">
           <div className="split__media">
-            <img src="/images/placeholder-montargil.svg" alt="" />
+            <img src="/images/montargil-dam.jpg" alt="" />
           </div>
           <div className="split__content">
             <span className="eyebrow">{t.location.eyebrow}</span>

@@ -6,8 +6,8 @@ export const whatsappNumber = '351919996263';
 // Placeholder: not the real address yet, swap when the owners confirm one.
 export const contactEmail = 'geral@patiojustalimoeiro.pt';
 
-// Placeholder: update once the owners send the real Instagram link.
-export const instagramUrl = 'https://instagram.com/patiojustalimoeiro';
+export const instagramUrl = 'https://www.instagram.com/justalimoeiro';
+export const facebookUrl = 'https://www.facebook.com/profile.php?id=61589643395097';
 
 // Placeholder example values: update with the real WiFi network and password,
 // then regenerate public/images/wifi-qr.png with scripts/generate-wifi-qr.mjs.

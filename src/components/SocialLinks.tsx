@@ -1,6 +1,6 @@
 import type { Locale } from '@/lib/i18n';
-import { instagramUrl, whatsappUrl } from '@/data/social';
-import { IconInstagram, IconWhatsApp } from './icons';
+import { facebookUrl, instagramUrl, whatsappUrl } from '@/data/social';
+import { IconFacebook, IconInstagram, IconWhatsApp } from './icons';
 
 interface SocialLinksProps {
   locale: Locale;
@@ -15,6 +15,9 @@ export default function SocialLinks({ locale, className }: SocialLinksProps) {
       </a>
       <a href={instagramUrl} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <IconInstagram />
+      </a>
+      <a href={facebookUrl} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <IconFacebook />
       </a>
     </div>
   );
