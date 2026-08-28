@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
 
 :root {
   /* Warm neutral palette inspired by the house: whitewashed walls, terracotta
@@ -17,7 +17,6 @@
 
   --font-display: 'Cormorant Garamond', 'Georgia', serif;
   --font-body: 'Jost', 'Helvetica Neue', Arial, sans-serif;
-  --font-script: 'Parisienne', cursive;
 
   --container-width: 1180px;
   --space-xs: 0.5rem;
@@ -1223,12 +1222,13 @@ h1, h2, h3, h4 {
 }
 
 .gallery-script {
-  font-family: var(--font-script);
+  font-family: var(--font-display);
+  font-style: italic;
   font-weight: 400;
-  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-size: clamp(1.9rem, 3.6vw, 2.6rem);
   color: var(--color-terracotta-dark);
   margin: 0.4rem 0 1.2rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .gallery-category-header p {

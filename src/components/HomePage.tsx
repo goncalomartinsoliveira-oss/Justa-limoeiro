@@ -5,6 +5,7 @@ import { localePath } from '@/lib/i18n';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import {
+  IconBed,
   IconExpand,
   IconFamily,
   IconHeart,
@@ -16,6 +17,8 @@ import {
 } from './icons';
 
 const factIcons = {
+  bedrooms: IconBed,
+  guests: IconFamily,
   private: IconHome,
   area: IconExpand,
   pool: IconPool,
@@ -106,6 +109,26 @@ export default function HomePage({ locale }: HomePageProps) {
                   <h3>{item.caption}</h3>
                   <p>{item.description}</p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--tight">
+        <div className="container">
+          <div className="section-heading section-heading--center">
+            <span className="eyebrow">{t.rooms.eyebrow}</span>
+            <h2>{t.rooms.title}</h2>
+            <p>{t.rooms.intro}</p>
+          </div>
+          <div className="perfect-for">
+            {t.rooms.items.map((item) => (
+              <div className="perfect-for__item" key={item}>
+                <span className="perfect-for__icon">
+                  <IconBed />
+                </span>
+                <span>{item}</span>
               </div>
             ))}
           </div>

@@ -13,11 +13,17 @@ export interface HomeContent {
     title: string;
     paragraphs: string[];
   };
-  facts: { icon: 'private' | 'area' | 'pool' | 'wifi'; label: string }[];
+  facts: { icon: 'private' | 'area' | 'pool' | 'wifi' | 'bedrooms' | 'guests'; label: string }[];
   spaces: {
     eyebrow: string;
     title: string;
     items: { image: string; alt: string; caption: string; description: string }[];
+  };
+  rooms: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    items: string[];
   };
   interior: {
     eyebrow: string;
@@ -79,6 +85,8 @@ export const home: Record<Locale, HomeContent> = {
       ],
     },
     facts: [
+      { icon: 'bedrooms', label: '3 quartos' },
+      { icon: 'guests', label: 'Até 8 hóspedes' },
       { icon: 'private', label: 'Espaço 100% privado' },
       { icon: 'area', label: '90 m² de área' },
       { icon: 'pool', label: 'Piscina exterior' },
@@ -110,6 +118,12 @@ export const home: Record<Locale, HomeContent> = {
             'A churrasqueira está à disposição para refeições ao ar livre, perfeitas para convívios em família ou entre amigos, acompanhadas pela tranquilidade da paisagem ribatejana.',
         },
       ],
+    },
+    rooms: {
+      eyebrow: 'Quartos & Camas',
+      title: 'Espaço para toda a gente',
+      intro: 'A casa tem 3 quartos e capacidade para até 8 hóspedes.',
+      items: ['2 camas individuais', '2 camas de casal', '2 sofás-cama'],
     },
     interior: {
       eyebrow: 'Conforto Interior',
@@ -187,6 +201,8 @@ export const home: Record<Locale, HomeContent> = {
       ],
     },
     facts: [
+      { icon: 'bedrooms', label: '3 bedrooms' },
+      { icon: 'guests', label: 'Up to 8 guests' },
       { icon: 'private', label: '100% private space' },
       { icon: 'area', label: '90 m² floor area' },
       { icon: 'pool', label: 'Outdoor pool' },
@@ -218,6 +234,12 @@ export const home: Record<Locale, HomeContent> = {
             'The barbecue is ready for meals in the open air, perfect for gatherings with family or friends, accompanied by the calm of the Ribatejo landscape.',
         },
       ],
+    },
+    rooms: {
+      eyebrow: 'Rooms & Beds',
+      title: 'Space for everyone',
+      intro: 'The house has 3 bedrooms and space for up to 8 guests.',
+      items: ['2 single beds', '2 double beds', '2 sofa beds'],
     },
     interior: {
       eyebrow: 'Interior Comfort',
@@ -295,6 +317,8 @@ export const home: Record<Locale, HomeContent> = {
       ],
     },
     facts: [
+      { icon: 'bedrooms', label: '3 habitaciones' },
+      { icon: 'guests', label: 'Hasta 8 huéspedes' },
       { icon: 'private', label: 'Espacio 100% privado' },
       { icon: 'area', label: '90 m² de superficie' },
       { icon: 'pool', label: 'Piscina exterior' },
@@ -326,6 +350,12 @@ export const home: Record<Locale, HomeContent> = {
             'La barbacoa está lista para comidas al aire libre, perfectas para reuniones en familia o entre amigos, acompañadas por la tranquilidad del paisaje ribatejano.',
         },
       ],
+    },
+    rooms: {
+      eyebrow: 'Habitaciones y Camas',
+      title: 'Espacio para todos',
+      intro: 'La casa tiene 3 habitaciones y capacidad para hasta 8 huéspedes.',
+      items: ['2 camas individuales', '2 camas de matrimonio', '2 sofás cama'],
     },
     interior: {
       eyebrow: 'Confort Interior',

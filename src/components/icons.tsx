@@ -204,6 +204,26 @@ export function IconClock(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
+export function IconBed(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={1.6}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      {...props}
+    >
+      <path d="M3 18v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6" />
+      <path d="M3 18v2M21 18v2" />
+      <path d="M3 13V7a1 1 0 0 1 1-1h6v6" />
+      <circle cx="7" cy="9" r="1.2" />
+    </svg>
+  );
+}
+
 export function IconMail(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
