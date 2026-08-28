@@ -490,8 +490,7 @@ h1, h2, h3, h4 {
 .hero__media {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(43, 38, 33, 0.15) 0%, rgba(43, 38, 33, 0.75) 100%),
-    var(--color-taupe) center / cover no-repeat;
+  background: var(--color-taupe);
 }
 
 .hero__media img {
@@ -500,17 +499,12 @@ h1, h2, h3, h4 {
   object-fit: cover;
 }
 
-.hero__placeholder-badge {
+.hero__media::after {
+  content: '';
   position: absolute;
-  top: var(--space-md);
-  right: var(--space-md);
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-white);
-  background: rgba(43, 38, 33, 0.45);
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(43, 38, 33, 0.1) 0%, rgba(43, 38, 33, 0.85) 100%);
+  pointer-events: none;
 }
 
 .hero__content {
