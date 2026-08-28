@@ -13,11 +13,21 @@ export interface HomeContent {
     title: string;
     paragraphs: string[];
   };
-  facts: { label: string }[];
+  facts: { icon: 'private' | 'area' | 'pool' | 'wifi'; label: string }[];
   spaces: {
     eyebrow: string;
     title: string;
     items: { image: string; alt: string; caption: string; description: string }[];
+  };
+  interior: {
+    eyebrow: string;
+    title: string;
+    paragraphs: string[];
+  };
+  perfectFor: {
+    eyebrow: string;
+    title: string;
+    items: { icon: 'weekend' | 'family' | 'romantic'; label: string }[];
   };
   amenities: {
     eyebrow: string;
@@ -49,7 +59,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Santa Justa, Coruche',
       title: 'Pátio Justa Limoeiro',
       subtitle:
-        'Uma casa branca, um limoeiro no quintal e uma piscina só para si — o refúgio tranquilo do Ribatejo.',
+        'Uma casa branca, um limoeiro no quintal e uma piscina só para si, no refúgio tranquilo do Ribatejo.',
       ctaPrimary: 'Reservar Agora',
       ctaSecondary: 'Conhecer a Casa',
     },
@@ -58,15 +68,15 @@ export const home: Record<Locale, HomeContent> = {
       title: 'Uma casa com nome de família e sabor a limão',
       paragraphs: [
         'O Pátio Justa Limoeiro nasce em Santa Justa, uma pequena localidade do concelho de Coruche, no coração do Ribatejo. O nome conta a sua própria história: "Justa" da terra que o acolhe, "Limoeiro" da árvore que ainda hoje dá sombra e fruto no quintal.',
-        'Situada no coração do Ribatejo, entre lezírias férteis e a proximidade do rio Tejo, a casa oferece serenidade e um contacto genuíno com as tradições rurais da região — um refúgio pensado para pausas de fim de semana, férias em família ou escapadinhas a dois.',
-        'Já Coruche — amplamente conhecida como a Capital Mundial da Cortiça — envolve a casa em paisagens de montados inspiradoras, enquanto a pitoresca aldeia de Santa Justa, a poucos minutos, mantém viva a simplicidade e a autenticidade da vida no campo.',
+        'Situada no coração do Ribatejo, entre lezírias férteis e a proximidade do rio Tejo, a casa oferece serenidade e um contacto genuíno com as tradições rurais da região, um refúgio pensado para pausas de fim de semana, férias em família ou escapadinhas a dois.',
+        'Já Coruche, amplamente conhecida como a Capital Mundial da Cortiça, envolve a casa em paisagens de montados inspiradoras, enquanto a pitoresca aldeia de Santa Justa, a poucos minutos, mantém viva a simplicidade e a autenticidade da vida no campo.',
       ],
     },
     facts: [
-      { label: 'Espaço 100% privado' },
-      { label: '90 m² de área' },
-      { label: 'Piscina exterior' },
-      { label: 'WiFi grátis' },
+      { icon: 'private', label: 'Espaço 100% privado' },
+      { icon: 'area', label: '90 m² de área' },
+      { icon: 'pool', label: 'Piscina exterior' },
+      { icon: 'wifi', label: 'WiFi grátis' },
     ],
     spaces: {
       eyebrow: 'Os Espaços',
@@ -77,7 +87,7 @@ export const home: Record<Locale, HomeContent> = {
           alt: 'Piscina exterior com espreguiçadeiras',
           caption: 'Piscina & Pátio',
           description:
-            'A piscina é o convite perfeito para os dias mais quentes — um mergulho refrescante ou uns momentos de descanso à beira-água, na tranquilidade do pátio.',
+            'A piscina é o convite perfeito para os dias mais quentes, seja um mergulho refrescante ou uns momentos de descanso à beira-água, na tranquilidade do pátio.',
         },
         {
           image: '/images/placeholder-garden.svg',
@@ -95,11 +105,27 @@ export const home: Record<Locale, HomeContent> = {
         },
       ],
     },
+    interior: {
+      eyebrow: 'Conforto Interior',
+      title: 'Um espaço com toque familiar',
+      paragraphs: [
+        'No interior, a casa oferece um espaço acolhedor, luminoso e funcional, decorado com simplicidade e bom gosto.',
+        'Cada área foi pensada para combinar o conforto moderno com o charme rural da região, garantindo uma experiência agradável em qualquer época do ano.',
+      ],
+    },
+    perfectFor: {
+      eyebrow: 'Ideal Para',
+      title: 'Feita para diferentes tipos de estadia',
+      items: [
+        { icon: 'weekend', label: 'Pausas de fim de semana' },
+        { icon: 'family', label: 'Férias em família' },
+        { icon: 'romantic', label: 'Escapadinhas a dois' },
+      ],
+    },
     amenities: {
       eyebrow: 'Comodidades',
       title: 'Tudo o que precisa, nada a mais',
-      intro:
-        'Um espaço acolhedor, luminoso e funcional, onde o conforto moderno se combina com o charme rural da região — dentro e fora de casa.',
+      intro: 'Uma lista simples com tudo o que torna a estadia mais confortável.',
       items: [
         'Piscina exterior privada',
         'Jardim com limoeiro e plantas tropicais',
@@ -113,7 +139,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Localização',
       title: 'Santa Justa, no coração do Ribatejo',
       paragraph:
-        'A casa fica em Santa Justa, no concelho de Coruche, a cerca de 15 minutos de carro da Barragem de Montargil — uma das maiores albufeiras de Portugal continental e ponto de partida para praias fluviais, desportos aquáticos e passeios pela natureza. Consulte a página de Pontos de Interesse para mais sugestões da região.',
+        'A casa fica em Santa Justa, no concelho de Coruche, a cerca de 15 minutos de carro da Barragem de Montargil, uma das maiores albufeiras de Portugal continental e ponto de partida para praias fluviais, desportos aquáticos e passeios pela natureza. Consulte a página de Pontos de Interesse para mais sugestões da região.',
       address: 'Rua do Faial, Santa Justa, Coruche',
     },
     booking: {
@@ -135,7 +161,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Santa Justa, Coruche',
       title: 'Pátio Justa Limoeiro',
       subtitle:
-        'A whitewashed house, a lemon tree in the garden, and a pool all to yourself — a quiet retreat in the Ribatejo countryside.',
+        'A whitewashed house, a lemon tree in the garden, and a pool all to yourself, in a quiet retreat in the Ribatejo countryside.',
       ctaPrimary: 'Book Now',
       ctaSecondary: 'Discover the House',
     },
@@ -144,15 +170,15 @@ export const home: Record<Locale, HomeContent> = {
       title: 'A house named after its land and its tree',
       paragraphs: [
         'Pátio Justa Limoeiro takes its name from Santa Justa, a small village in the Coruche municipality, in the heart of the Ribatejo region. Its name tells its own story: "Justa" from the land that holds it, "Limoeiro" from the tree that still gives shade and fruit in the backyard.',
-        'Set in the heart of the Ribatejo, among fertile lezíria plains and close to the Tagus river, the house offers serenity and a genuine connection to the region\'s rural traditions — a retreat built for weekend breaks, family holidays or romantic getaways.',
-        'Coruche itself — widely known as the World Capital of Cork — surrounds the house with inspiring cork-oak landscapes, while the picturesque village of Santa Justa, just minutes away, keeps the simplicity and authenticity of country life alive.',
+        'Set in the heart of the Ribatejo, among fertile lezíria plains and close to the Tagus river, the house offers serenity and a genuine connection to the region\'s rural traditions, a retreat built for weekend breaks, family holidays or romantic getaways.',
+        'Coruche itself, widely known as the World Capital of Cork, surrounds the house with inspiring cork-oak landscapes, while the picturesque village of Santa Justa, just minutes away, keeps the simplicity and authenticity of country life alive.',
       ],
     },
     facts: [
-      { label: '100% private space' },
-      { label: '90 m² floor area' },
-      { label: 'Outdoor pool' },
-      { label: 'Free WiFi' },
+      { icon: 'private', label: '100% private space' },
+      { icon: 'area', label: '90 m² floor area' },
+      { icon: 'pool', label: 'Outdoor pool' },
+      { icon: 'wifi', label: 'Free WiFi' },
     ],
     spaces: {
       eyebrow: 'The Spaces',
@@ -163,7 +189,7 @@ export const home: Record<Locale, HomeContent> = {
           alt: 'Outdoor pool with sun loungers',
           caption: 'Pool & Courtyard',
           description:
-            'The pool is the perfect invitation on warmer days — a refreshing dip or a few quiet moments by the water, in the calm of the courtyard.',
+            'The pool is the perfect invitation on warmer days, whether a refreshing dip or a few quiet moments by the water, in the calm of the courtyard.',
         },
         {
           image: '/images/placeholder-garden.svg',
@@ -177,15 +203,31 @@ export const home: Record<Locale, HomeContent> = {
           alt: 'Covered outdoor barbecue area',
           caption: 'Covered Outdoor Area',
           description:
-            'The barbecue is ready for meals in the open air — perfect for gatherings with family or friends, accompanied by the calm of the Ribatejo landscape.',
+            'The barbecue is ready for meals in the open air, perfect for gatherings with family or friends, accompanied by the calm of the Ribatejo landscape.',
         },
+      ],
+    },
+    interior: {
+      eyebrow: 'Interior Comfort',
+      title: 'A space with a homely touch',
+      paragraphs: [
+        'Inside, the house offers a welcoming, bright and functional space, decorated with simplicity and good taste.',
+        'Every area was designed to combine modern comfort with the rural charm of the region, for a pleasant experience at any time of year.',
+      ],
+    },
+    perfectFor: {
+      eyebrow: 'Perfect For',
+      title: 'Suited to different kinds of stays',
+      items: [
+        { icon: 'weekend', label: 'Weekend breaks' },
+        { icon: 'family', label: 'Family holidays' },
+        { icon: 'romantic', label: 'Romantic getaways' },
       ],
     },
     amenities: {
       eyebrow: 'Amenities',
       title: 'Everything you need, nothing more',
-      intro:
-        'A welcoming, bright and functional space, where modern comfort meets the rural charm of the region — indoors and out.',
+      intro: 'A simple list of everything that makes your stay more comfortable.',
       items: [
         'Private outdoor pool',
         'Garden with lemon tree and tropical plants',
@@ -199,7 +241,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Location',
       title: 'Santa Justa, in the heart of the Ribatejo',
       paragraph:
-        'The house is located in Santa Justa, in the Coruche municipality, about a 15-minute drive from the Montargil Dam — one of mainland Portugal’s largest reservoirs, and a gateway to river beaches, water sports and nature walks. Check the Places to Visit page for more suggestions around the region.',
+        'The house is located in Santa Justa, in the Coruche municipality, about a 15-minute drive from the Montargil Dam, one of mainland Portugal’s largest reservoirs and a gateway to river beaches, water sports and nature walks. Check the Places to Visit page for more suggestions around the region.',
       address: 'Rua do Faial, Santa Justa, Coruche, Portugal',
     },
     booking: {
@@ -221,7 +263,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Santa Justa, Coruche',
       title: 'Pátio Justa Limoeiro',
       subtitle:
-        'Una casa encalada, un limonero en el jardín y una piscina solo para usted — un refugio tranquilo en el Ribatejo.',
+        'Una casa encalada, un limonero en el jardín y una piscina solo para usted, en un refugio tranquilo en el Ribatejo.',
       ctaPrimary: 'Reservar Ahora',
       ctaSecondary: 'Conocer la Casa',
     },
@@ -230,15 +272,15 @@ export const home: Record<Locale, HomeContent> = {
       title: 'Una casa con nombre de familia y sabor a limón',
       paragraphs: [
         'Pátio Justa Limoeiro toma su nombre de Santa Justa, una pequeña localidad del municipio de Coruche, en el corazón del Ribatejo. Su nombre cuenta su propia historia: "Justa" por la tierra que la acoge, "Limoeiro" por el árbol que todavía hoy da sombra y fruto en el jardín.',
-        'Situada en el corazón del Ribatejo, entre fértiles llanuras de "lezíria" y cerca del río Tajo, la casa ofrece serenidad y un contacto genuino con las tradiciones rurales de la región — un refugio pensado para escapadas de fin de semana, vacaciones en familia o momentos románticos en pareja.',
-        'El propio municipio de Coruche — ampliamente conocido como la Capital Mundial del Corcho — rodea la casa de paisajes de alcornocales, mientras que el pintoresco pueblo de Santa Justa, a pocos minutos, mantiene viva la sencillez y autenticidad de la vida en el campo.',
+        'Situada en el corazón del Ribatejo, entre fértiles llanuras de "lezíria" y cerca del río Tajo, la casa ofrece serenidad y un contacto genuino con las tradiciones rurales de la región, un refugio pensado para escapadas de fin de semana, vacaciones en familia o momentos románticos en pareja.',
+        'El propio municipio de Coruche, ampliamente conocido como la Capital Mundial del Corcho, rodea la casa de paisajes de alcornocales, mientras que el pintoresco pueblo de Santa Justa, a pocos minutos, mantiene viva la sencillez y autenticidad de la vida en el campo.',
       ],
     },
     facts: [
-      { label: 'Espacio 100% privado' },
-      { label: '90 m² de superficie' },
-      { label: 'Piscina exterior' },
-      { label: 'WiFi gratis' },
+      { icon: 'private', label: 'Espacio 100% privado' },
+      { icon: 'area', label: '90 m² de superficie' },
+      { icon: 'pool', label: 'Piscina exterior' },
+      { icon: 'wifi', label: 'WiFi gratis' },
     ],
     spaces: {
       eyebrow: 'Los Espacios',
@@ -249,7 +291,7 @@ export const home: Record<Locale, HomeContent> = {
           alt: 'Piscina exterior con tumbonas',
           caption: 'Piscina y Patio',
           description:
-            'La piscina es la invitación perfecta en los días más calurosos — un chapuzón refrescante o unos momentos de calma junto al agua, en la tranquilidad del patio.',
+            'La piscina es la invitación perfecta en los días más calurosos, ya sea un chapuzón refrescante o unos momentos de calma junto al agua, en la tranquilidad del patio.',
         },
         {
           image: '/images/placeholder-garden.svg',
@@ -267,11 +309,27 @@ export const home: Record<Locale, HomeContent> = {
         },
       ],
     },
+    interior: {
+      eyebrow: 'Confort Interior',
+      title: 'Un espacio con toque familiar',
+      paragraphs: [
+        'En el interior, la casa ofrece un espacio acogedor, luminoso y funcional, decorado con sencillez y buen gusto.',
+        'Cada zona fue pensada para combinar el confort moderno con el encanto rural de la región, garantizando una experiencia agradable en cualquier época del año.',
+      ],
+    },
+    perfectFor: {
+      eyebrow: 'Ideal Para',
+      title: 'Pensada para distintos tipos de estancia',
+      items: [
+        { icon: 'weekend', label: 'Escapadas de fin de semana' },
+        { icon: 'family', label: 'Vacaciones en familia' },
+        { icon: 'romantic', label: 'Escapadas en pareja' },
+      ],
+    },
     amenities: {
       eyebrow: 'Comodidades',
       title: 'Todo lo que necesita, nada más',
-      intro:
-        'Un espacio acogedor, luminoso y funcional, donde el confort moderno se combina con el encanto rural de la región — dentro y fuera de casa.',
+      intro: 'Una lista sencilla con todo lo que hace la estancia más cómoda.',
       items: [
         'Piscina exterior privada',
         'Jardín con limonero y plantas tropicales',
@@ -285,7 +343,7 @@ export const home: Record<Locale, HomeContent> = {
       eyebrow: 'Ubicación',
       title: 'Santa Justa, en el corazón del Ribatejo',
       paragraph:
-        'La casa está ubicada en Santa Justa, municipio de Coruche, a unos 15 minutos en coche de la Presa de Montargil — uno de los mayores embalses de Portugal continental y punto de partida hacia playas fluviales, deportes acuáticos y paseos por la naturaleza. Consulte la página de Puntos de Interés para más sugerencias de la región.',
+        'La casa está ubicada en Santa Justa, municipio de Coruche, a unos 15 minutos en coche de la Presa de Montargil, uno de los mayores embalses de Portugal continental y punto de partida hacia playas fluviales, deportes acuáticos y paseos por la naturaleza. Consulte la página de Puntos de Interés para más sugerencias de la región.',
       address: 'Rua do Faial, Santa Justa, Coruche, Portugal',
     },
     booking: {

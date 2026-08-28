@@ -4,6 +4,28 @@ import { home } from '@/data/home';
 import { localePath } from '@/lib/i18n';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
+import {
+  IconExpand,
+  IconFamily,
+  IconHeart,
+  IconHome,
+  IconCalendar,
+  IconPool,
+  IconWifi,
+} from './icons';
+
+const factIcons = {
+  private: IconHome,
+  area: IconExpand,
+  pool: IconPool,
+  wifi: IconWifi,
+} as const;
+
+const perfectForIcons = {
+  weekend: IconCalendar,
+  family: IconFamily,
+  romantic: IconHeart,
+} as const;
 
 interface HomePageProps {
   locale: Locale;
@@ -37,11 +59,19 @@ export default function HomePage({ locale }: HomePageProps) {
       </section>
 
       <section className="facts">
-        {t.facts.map((f) => (
-          <div className="facts__item" key={f.label}>
-            {f.label}
-          </div>
-        ))}
+        <div className="container facts__grid">
+          {t.facts.map((f) => {
+            const Icon = factIcons[f.icon];
+            return (
+              <div className="facts__item" key={f.label}>
+                <span className="facts__icon">
+                  <Icon />
+                </span>
+                <span>{f.label}</span>
+              </div>
+            );
+          })}
+        </div>
       </section>
 
       <section className="section" id="welcome">
@@ -77,6 +107,43 @@ export default function HomePage({ locale }: HomePageProps) {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container split split--reverse">
+          <div className="split__media">
+            <img src="/images/placeholder-interior.svg" alt="" />
+          </div>
+          <div className="split__content">
+            <span className="eyebrow">{t.interior.eyebrow}</span>
+            <h2>{t.interior.title}</h2>
+            {t.interior.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--tight section--sand">
+        <div className="container">
+          <div className="section-heading section-heading--center">
+            <span className="eyebrow">{t.perfectFor.eyebrow}</span>
+            <h2>{t.perfectFor.title}</h2>
+          </div>
+          <div className="perfect-for">
+            {t.perfectFor.items.map((item) => {
+              const Icon = perfectForIcons[item.icon];
+              return (
+                <div className="perfect-for__item" key={item.label}>
+                  <span className="perfect-for__icon">
+                    <Icon />
+                  </span>
+                  <span>{item.label}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

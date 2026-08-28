@@ -1,8 +1,11 @@
 import type { Locale } from '@/lib/i18n';
 import { contact } from '@/data/contact';
+import { contactEmail, phoneDisplay, whatsappNumber } from '@/data/social';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import BookingForm from './BookingForm';
+import SocialLinks from './SocialLinks';
+import { IconMail, IconPhone } from './icons';
 
 interface ContactPageProps {
   locale: Locale;
@@ -28,6 +31,21 @@ export default function ContactPage({ locale }: ContactPageProps) {
           </div>
 
           <div className="booking-card">
+            <h3>{t.contactHeading}</h3>
+            <ul className="contact-details__list">
+              <li>
+                <IconPhone />
+                <a href={`tel:+${whatsappNumber}`}>{phoneDisplay}</a>
+              </li>
+              <li>
+                <IconMail />
+                <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+              </li>
+            </ul>
+            <SocialLinks locale={locale} />
+
+            <hr className="contact-details__divider" />
+
             <h3>{t.bookingNote}</h3>
             <a
               href={t.bookingUrl}

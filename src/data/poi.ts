@@ -96,9 +96,9 @@ export const poiEntries: PoiEntry[] = [
       es: 'Coruche, Capital Mundial del Corcho',
     },
     description: {
-      pt: 'Rodeado por extensos montados de sobreiro, o concelho de Coruche é amplamente reconhecido como a Capital Mundial da Cortiça — paisagens naturais inspiradoras e um património cultural rico, a poucos minutos da casa.',
-      en: 'Surrounded by vast cork-oak groves, the Coruche municipality is widely recognised as the World Capital of Cork — inspiring natural landscapes and a rich cultural heritage, just minutes from the house.',
-      es: 'Rodeado de extensos alcornocales, el municipio de Coruche es ampliamente reconocido como la Capital Mundial del Corcho — paisajes naturales inspiradores y un rico patrimonio cultural, a pocos minutos de la casa.',
+      pt: 'Rodeado por extensos montados de sobreiro, o concelho de Coruche é amplamente reconhecido como a Capital Mundial da Cortiça, com paisagens naturais inspiradoras e um património cultural rico, a poucos minutos da casa.',
+      en: 'Surrounded by vast cork-oak groves, the Coruche municipality is widely recognised as the World Capital of Cork, with inspiring natural landscapes and a rich cultural heritage, just minutes from the house.',
+      es: 'Rodeado de extensos alcornocales, el municipio de Coruche es ampliamente reconocido como la Capital Mundial del Corcho, con paisajes naturales inspiradores y un rico patrimonio cultural, a pocos minutos de la casa.',
     },
   },
   {

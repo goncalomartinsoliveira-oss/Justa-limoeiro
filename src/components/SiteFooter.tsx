@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { localePath, type Locale } from '@/lib/i18n';
 import { nav } from '@/data/nav';
+import SocialLinks from './SocialLinks';
 
 interface SiteFooterProps {
   locale: Locale;
@@ -23,6 +24,8 @@ export default function SiteFooter({ locale }: SiteFooterProps) {
           <Link href={localePath(locale, '/explore')}>{t.footerExploreMore}</Link>
           <Link href={localePath(locale, '/contact')}>{t.contact}</Link>
         </nav>
+
+        <SocialLinks locale={locale} className="site-footer__social" />
 
         <p className="site-footer__rights">
           © {year} {t.siteName}. {t.footerRights}

@@ -4,6 +4,7 @@ export interface ContactContent {
   eyebrow: string;
   title: string;
   intro: string;
+  contactHeading: string;
   bookingNote: string;
   bookingCta: string;
   bookingUrl: string;
@@ -26,11 +27,11 @@ export const contact: Record<Locale, ContactContent> = {
     title: 'Vamos combinar a sua estadia',
     intro:
       'Preencha o formulário abaixo com os detalhes da sua estadia e entraremos em contacto para confirmar a reserva.',
+    contactHeading: 'Outros contactos',
     bookingNote: 'Prefere reservar através do Booking.com?',
     bookingCta: 'Ver Disponibilidade no Booking.com',
     bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.pt-pt.html',
-    formNote:
-      'Formulário de contacto — brevemente ligado ao envio automático de email.',
+    formNote: 'Formulário de contacto. Brevemente com envio automático de email.',
     fields: {
       name: 'Nome',
       email: 'Email',
@@ -47,10 +48,11 @@ export const contact: Record<Locale, ContactContent> = {
     title: "Let's plan your stay",
     intro:
       'Fill in the form below with your stay details and we will get back to you to confirm the booking.',
+    contactHeading: 'Other ways to reach us',
     bookingNote: 'Prefer to book through Booking.com?',
     bookingCta: 'Check Availability on Booking.com',
     bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.en-gb.html',
-    formNote: 'Contact form — automatic email sending coming soon.',
+    formNote: 'Contact form. Automatic email sending coming soon.',
     fields: {
       name: 'Name',
       email: 'Email',
@@ -67,10 +69,11 @@ export const contact: Record<Locale, ContactContent> = {
     title: 'Organicemos su estancia',
     intro:
       'Complete el formulario a continuación con los detalles de su estancia y nos pondremos en contacto para confirmar la reserva.',
+    contactHeading: 'Otras formas de contacto',
     bookingNote: '¿Prefiere reservar a través de Booking.com?',
     bookingCta: 'Ver Disponibilidad en Booking.com',
     bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.es.html',
-    formNote: 'Formulario de contacto — envío automático de email próximamente.',
+    formNote: 'Formulario de contacto. Envío automático de email próximamente.',
     fields: {
       name: 'Nombre',
       email: 'Email',
