@@ -8,12 +8,13 @@ import { nav } from '@/data/nav';
 
 interface MobileMenuProps {
   locale: Locale;
-  currentPage: 'home' | 'explore' | 'contact';
+  currentPage: 'home' | 'gallery' | 'explore' | 'contact';
   light?: boolean;
 }
 
 const pageToPath: Record<MobileMenuProps['currentPage'], string> = {
   home: '/',
+  gallery: '/gallery',
   explore: '/explore',
   contact: '/contact',
 };
@@ -77,6 +78,13 @@ export default function MobileMenu({ locale, currentPage, light }: MobileMenuPro
                 onClick={() => setOpen(false)}
               >
                 {t.home}
+              </Link>
+              <Link
+                href={localePath(locale, '/gallery')}
+                className={currentPage === 'gallery' ? 'is-active' : ''}
+                onClick={() => setOpen(false)}
+              >
+                {t.gallery}
               </Link>
               <Link
                 href={localePath(locale, '/explore')}

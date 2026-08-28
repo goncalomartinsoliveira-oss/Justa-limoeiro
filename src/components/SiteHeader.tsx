@@ -8,11 +8,12 @@ import MobileMenu from './MobileMenu';
 
 interface SiteHeaderProps {
   locale: Locale;
-  currentPage: 'home' | 'explore' | 'contact';
+  currentPage: 'home' | 'gallery' | 'explore' | 'contact';
 }
 
 const pageToPath: Record<SiteHeaderProps['currentPage'], string> = {
   home: '/',
+  gallery: '/gallery',
   explore: '/explore',
   contact: '/contact',
 };
@@ -55,6 +56,12 @@ export default function SiteHeader({ locale, currentPage }: SiteHeaderProps) {
             className={currentPage === 'home' ? 'is-active' : ''}
           >
             {t.home}
+          </Link>
+          <Link
+            href={localePath(locale, '/gallery')}
+            className={currentPage === 'gallery' ? 'is-active' : ''}
+          >
+            {t.gallery}
           </Link>
           <Link
             href={localePath(locale, '/explore')}

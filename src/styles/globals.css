@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&family=Parisienne&display=swap');
 
 :root {
   /* Warm neutral palette inspired by the house: whitewashed walls, terracotta
@@ -17,6 +17,7 @@
 
   --font-display: 'Cormorant Garamond', 'Georgia', serif;
   --font-body: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+  --font-script: 'Parisienne', cursive;
 
   --container-width: 1180px;
   --space-xs: 0.5rem;
@@ -1182,4 +1183,78 @@ h1, h2, h3, h4 {
 .guide-footer {
   padding: var(--space-lg) 0;
   text-align: center;
+}
+
+/* ---------- Gallery page ---------- */
+
+.gallery-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.gallery-tab {
+  background: none;
+  border: none;
+  padding: 0.3rem 0;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  color: var(--color-taupe);
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.gallery-tab:hover {
+  color: var(--color-ink);
+}
+
+.gallery-tab.is-active {
+  color: var(--color-ink);
+  border-bottom-color: var(--color-terracotta);
+}
+
+.gallery-category-header {
+  max-width: 640px;
+  margin: 0 auto var(--space-lg);
+  text-align: center;
+}
+
+.gallery-script {
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  color: var(--color-terracotta-dark);
+  margin: 0.4rem 0 1.2rem;
+  line-height: 1.2;
+}
+
+.gallery-category-header p {
+  color: var(--color-taupe);
+  margin-bottom: 1.2rem;
+}
+
+.gallery-masonry {
+  column-count: 2;
+  column-gap: var(--space-sm);
+}
+
+.gallery-masonry img {
+  width: 100%;
+  display: block;
+  margin-bottom: var(--space-sm);
+  border-radius: var(--radius);
+  break-inside: avoid;
+}
+
+@media (max-width: 700px) {
+  .gallery-tabs {
+    gap: var(--space-md);
+  }
+
+  .gallery-masonry {
+    column-count: 1;
+  }
 }

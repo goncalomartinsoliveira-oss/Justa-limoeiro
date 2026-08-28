@@ -4,6 +4,7 @@ export interface NavDict {
   siteName: string;
   tagline: string;
   home: string;
+  gallery: string;
   explore: string;
   contact: string;
   bookNow: string;
@@ -17,6 +18,7 @@ export const nav: Record<Locale, NavDict> = {
     siteName: 'Pátio Justa Limoeiro',
     tagline: 'Alojamento Local · Santa Justa, Coruche',
     home: 'Início',
+    gallery: 'Galeria',
     explore: 'Pontos de Interesse',
     contact: 'Contactos',
     bookNow: 'Reservar',
@@ -28,6 +30,7 @@ export const nav: Record<Locale, NavDict> = {
     siteName: 'Pátio Justa Limoeiro',
     tagline: 'Local Guesthouse · Santa Justa, Coruche',
     home: 'Home',
+    gallery: 'Gallery',
     explore: 'Places to Visit',
     contact: 'Contact',
     bookNow: 'Book Now',
@@ -39,6 +42,7 @@ export const nav: Record<Locale, NavDict> = {
     siteName: 'Pátio Justa Limoeiro',
     tagline: 'Alojamiento Local · Santa Justa, Coruche',
     home: 'Inicio',
+    gallery: 'Galería',
     explore: 'Puntos de Interés',
     contact: 'Contacto',
     bookNow: 'Reservar',
