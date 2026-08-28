@@ -6,9 +6,12 @@ export interface GuideContent {
   intro: string;
   aboutHeading: string;
   addressLabel: string;
+  checkInLabel: string;
+  checkOutLabel: string;
   wifiLabel: string;
-  wifiNote: string;
-  amenitiesHeading: string;
+  wifiNetworkLabel: string;
+  wifiPasswordLabel: string;
+  wifiQrNote: string;
   contactsHeading: string;
   emergencyLabel: string;
   backToSite: string;
@@ -22,9 +25,12 @@ export const guide: Record<Locale, GuideContent> = {
       'Este guia reúne o que precisa durante a sua estadia: informações sobre a casa, contactos úteis e sugestões para explorar a região.',
     aboutHeading: 'Sobre a Casa',
     addressLabel: 'Morada',
+    checkInLabel: 'Check-in a partir das',
+    checkOutLabel: 'Check-out até às',
     wifiLabel: 'WiFi',
-    wifiNote: 'Peça a rede e a palavra-passe aos anfitriões.',
-    amenitiesHeading: 'Comodidades',
+    wifiNetworkLabel: 'Rede',
+    wifiPasswordLabel: 'Palavra-passe',
+    wifiQrNote: 'Ou leia o código para ligar automaticamente.',
     contactsHeading: 'Contactos Úteis',
     emergencyLabel: 'Emergência (Portugal)',
     backToSite: 'Ver o site completo',
@@ -36,9 +42,12 @@ export const guide: Record<Locale, GuideContent> = {
       'This guide brings together what you need during your stay: house information, useful contacts and suggestions for exploring the region.',
     aboutHeading: 'About the House',
     addressLabel: 'Address',
+    checkInLabel: 'Check-in from',
+    checkOutLabel: 'Check-out until',
     wifiLabel: 'WiFi',
-    wifiNote: 'Ask the hosts for the network name and password.',
-    amenitiesHeading: 'Amenities',
+    wifiNetworkLabel: 'Network',
+    wifiPasswordLabel: 'Password',
+    wifiQrNote: 'Or scan the code to connect automatically.',
     contactsHeading: 'Useful Contacts',
     emergencyLabel: 'Emergency (Portugal)',
     backToSite: 'Visit the full website',
@@ -50,9 +59,12 @@ export const guide: Record<Locale, GuideContent> = {
       'Esta guía reúne lo que necesita durante su estancia: información sobre la casa, contactos útiles y sugerencias para explorar la región.',
     aboutHeading: 'Sobre la Casa',
     addressLabel: 'Dirección',
+    checkInLabel: 'Entrada a partir de las',
+    checkOutLabel: 'Salida hasta las',
     wifiLabel: 'WiFi',
-    wifiNote: 'Pida la red y la contraseña a los anfitriones.',
-    amenitiesHeading: 'Comodidades',
+    wifiNetworkLabel: 'Red',
+    wifiPasswordLabel: 'Contraseña',
+    wifiQrNote: 'O escanee el código para conectarse automáticamente.',
     contactsHeading: 'Contactos Útiles',
     emergencyLabel: 'Emergencias (Portugal)',
     backToSite: 'Ver el sitio completo',

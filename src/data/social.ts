@@ -9,6 +9,15 @@ export const contactEmail = 'geral@patiojustalimoeiro.pt';
 // Placeholder: update once the owners send the real Instagram link.
 export const instagramUrl = 'https://instagram.com/patiojustalimoeiro';
 
+// Placeholder example values: update with the real WiFi network and password,
+// then regenerate public/images/wifi-qr.png with scripts/generate-wifi-qr.mjs.
+export const wifiNetwork = 'PatioJustaLimoeiro';
+export const wifiPassword = 'ExemploLimoeiro2024';
+
+// Placeholder times: confirm the real check-in/check-out times with the owners.
+export const checkInTime = '15:00';
+export const checkOutTime = '11:00';
+
 export const whatsappMessage: Record<Locale, string> = {
   pt: 'Olá! Gostaria de saber mais sobre o Pátio Justa Limoeiro.',
   en: 'Hi! I would like to know more about Pátio Justa Limoeiro.',

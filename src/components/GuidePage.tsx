@@ -3,10 +3,18 @@ import { locales, localeNames, localePath, type Locale } from '@/lib/i18n';
 import { guide } from '@/data/guide';
 import { home } from '@/data/home';
 import { poiPageText } from '@/data/poi';
-import { contactEmail, phoneDisplay, whatsappNumber } from '@/data/social';
+import {
+  checkInTime,
+  checkOutTime,
+  contactEmail,
+  phoneDisplay,
+  whatsappNumber,
+  wifiNetwork,
+  wifiPassword,
+} from '@/data/social';
 import SocialLinks from './SocialLinks';
 import PoiFilter from './PoiFilter';
-import { IconMail, IconPhone, IconWifi } from './icons';
+import { IconClock, IconMail, IconPhone } from './icons';
 
 interface GuidePageProps {
   locale: Locale;
@@ -42,26 +50,42 @@ export default function GuidePage({ locale }: GuidePageProps) {
       </div>
 
       <section className="section--tight">
-        <div className="container booking-grid">
+        <div className="container guide-info-grid">
           <div className="booking-card">
             <h3>{t.aboutHeading}</h3>
             <ul className="contact-details__list">
               <li>
-                <IconWifi />
+                <IconClock />
                 <span>
-                  {t.wifiLabel}. {t.wifiNote}
+                  {t.checkInLabel} {checkInTime}
+                </span>
+              </li>
+              <li>
+                <IconClock />
+                <span>
+                  {t.checkOutLabel} {checkOutTime}
                 </span>
               </li>
             </ul>
-            <p style={{ marginBottom: '1rem', color: 'var(--color-taupe)' }}>
+            <p style={{ color: 'var(--color-taupe)' }}>
               {t.addressLabel}: {h.location.address}
             </p>
-            <h3 style={{ marginTop: '1.6rem' }}>{t.amenitiesHeading}</h3>
-            <ul className="amenities-list amenities-list--single">
-              {h.amenities.items.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
+          </div>
+
+          <div className="booking-card guide-wifi-card">
+            <h3>{t.wifiLabel}</h3>
+            <p style={{ marginBottom: '0.4rem' }}>
+              {t.wifiNetworkLabel}: <strong>{wifiNetwork}</strong>
+            </p>
+            <p style={{ color: 'var(--color-taupe)' }}>
+              {t.wifiPasswordLabel}: <strong>{wifiPassword}</strong>
+            </p>
+            <img
+              src="/images/wifi-qr.png"
+              alt={`${t.wifiLabel} QR code`}
+              className="guide-wifi-qr"
+            />
+            <p className="guide-wifi-note">{t.wifiQrNote}</p>
           </div>
 
           <div className="booking-card">
