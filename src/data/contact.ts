@@ -30,7 +30,7 @@ export const contact: Record<Locale, ContactContent> = {
     contactHeading: 'Outros contactos',
     bookingNote: 'Prefere reservar através do Booking.com?',
     bookingCta: 'Ver Disponibilidade no Booking.com',
-    bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.pt-pt.html',
+    bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.pt-pt.html',
     formNote: 'Formulário de contacto. Brevemente com envio automático de email.',
     fields: {
       name: 'Nome',
@@ -51,7 +51,7 @@ export const contact: Record<Locale, ContactContent> = {
     contactHeading: 'Other ways to reach us',
     bookingNote: 'Prefer to book through Booking.com?',
     bookingCta: 'Check Availability on Booking.com',
-    bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.en-gb.html',
+    bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.en-gb.html',
     formNote: 'Contact form. Automatic email sending coming soon.',
     fields: {
       name: 'Name',
@@ -72,7 +72,7 @@ export const contact: Record<Locale, ContactContent> = {
     contactHeading: 'Otras formas de contacto',
     bookingNote: '¿Prefiere reservar a través de Booking.com?',
     bookingCta: 'Ver Disponibilidad en Booking.com',
-    bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.es.html',
+    bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.es.html',
     formNote: 'Formulario de contacto. Envío automático de email próximamente.',
     fields: {
       name: 'Nombre',

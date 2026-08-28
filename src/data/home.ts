@@ -160,7 +160,7 @@ export const home: Record<Locale, HomeContent> = {
       paragraph:
         'Pode reservar diretamente através do Booking.com ou contactar-nos para combinarmos os detalhes da sua estadia.',
       bookingCta: 'Ver Disponibilidade no Booking.com',
-      bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.pt-pt.html',
+      bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.pt-pt.html',
       directTitle: 'Prefere reservar diretamente?',
       directParagraph:
         'Preencha o nosso formulário de contacto e entraremos em contacto para confirmar a sua estadia.',
@@ -268,7 +268,7 @@ export const home: Record<Locale, HomeContent> = {
       paragraph:
         'You can book directly through Booking.com, or reach out to us to arrange the details of your stay.',
       bookingCta: 'Check Availability on Booking.com',
-      bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.en-gb.html',
+      bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.en-gb.html',
       directTitle: 'Prefer to book directly?',
       directParagraph:
         'Fill in our contact form and we will get back to you to confirm your stay.',
@@ -376,7 +376,7 @@ export const home: Record<Locale, HomeContent> = {
       paragraph:
         'Puede reservar directamente a través de Booking.com o contactarnos para acordar los detalles de su estancia.',
       bookingCta: 'Ver Disponibilidad en Booking.com',
-      bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro.es.html',
+      bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.es.html',
       directTitle: '¿Prefiere reservar directamente?',
       directParagraph:
         'Complete nuestro formulario de contacto y nos pondremos en contacto para confirmar su estancia.',
