@@ -1,0 +1,35 @@
+{
+  "name": "patio-justa-limoeiro",
+  "version": "1.0.0",
+  "description": "Site institucional do Pátio Justa Limoeiro — alojamento local em Santa Justa, Coruche",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goncalomartinsoliveira-oss/Justa-limoeiro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goncalomartinsoliveira-oss/Justa-limoeiro/issues"
+  },
+  "homepage": "https://github.com/goncalomartinsoliveira-oss/Justa-limoeiro#readme",
+  "dependencies": {
+    "next": "^16.3.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.5",
+    "playwright": "^1.62.1",
+    "typescript": "^7.0.2"
+  }
+}
