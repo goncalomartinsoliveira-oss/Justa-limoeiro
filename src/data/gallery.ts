@@ -135,10 +135,12 @@ export const galleryImages: Record<GalleryCategory, GalleryImage[]> = {
     { src: '/images/gallery/garden-4.svg', alt: { pt: 'Caminho do jardim', en: 'Garden path', es: 'Camino del jardín' } },
   ],
   interior: [
-    { src: '/images/gallery/interior-1.svg', alt: { pt: 'Sala de estar', en: 'Living room', es: 'Sala de estar' } },
-    { src: '/images/gallery/interior-2.svg', alt: { pt: 'Quarto', en: 'Bedroom', es: 'Dormitorio' } },
-    { src: '/images/gallery/interior-3.svg', alt: { pt: 'Cozinha', en: 'Kitchen', es: 'Cocina' } },
-    { src: '/images/gallery/interior-4.svg', alt: { pt: 'Casa de banho', en: 'Bathroom', es: 'Baño' } },
+    { src: '/images/gallery/interior-1.jpg', alt: { pt: 'Sala de estar', en: 'Living room', es: 'Sala de estar' } },
+    { src: '/images/gallery/interior-2.jpg', alt: { pt: 'Zona de estar e televisão', en: 'Living area and TV', es: 'Zona de estar y televisión' } },
+    { src: '/images/gallery/interior-3.jpg', alt: { pt: 'Cozinha', en: 'Kitchen', es: 'Cocina' } },
+    { src: '/images/gallery/interior-4.jpg', alt: { pt: 'Quarto principal', en: 'Main bedroom', es: 'Dormitorio principal' } },
+    { src: '/images/gallery/interior-5.jpg', alt: { pt: 'Segundo quarto', en: 'Second bedroom', es: 'Segundo dormitorio' } },
+    { src: '/images/gallery/interior-6.jpg', alt: { pt: 'Casa de banho', en: 'Bathroom', es: 'Baño' } },
   ],
   outdoor: [
     { src: '/images/gallery/outdoor-1.svg', alt: { pt: 'Zona de churrasco', en: 'Barbecue area', es: 'Zona de barbacoa' } },
