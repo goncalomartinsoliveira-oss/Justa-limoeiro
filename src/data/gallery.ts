@@ -123,16 +123,17 @@ export interface GalleryImage {
 
 export const galleryImages: Record<GalleryCategory, GalleryImage[]> = {
   pool: [
-    { src: '/images/gallery/pool-1.svg', alt: { pt: 'Piscina exterior', en: 'Outdoor pool', es: 'Piscina exterior' } },
-    { src: '/images/gallery/pool-2.svg', alt: { pt: 'Pátio junto à piscina', en: 'Poolside patio', es: 'Patio junto a la piscina' } },
-    { src: '/images/gallery/pool-3.svg', alt: { pt: 'Espreguiçadeiras', en: 'Sun loungers', es: 'Tumbonas' } },
-    { src: '/images/gallery/pool-4.svg', alt: { pt: 'Vista da piscina', en: 'Pool view', es: 'Vista de la piscina' } },
+    { src: '/images/gallery/pool-1.jpg', alt: { pt: 'Vista aérea da piscina', en: 'Aerial view of the pool', es: 'Vista aérea de la piscina' } },
+    { src: '/images/gallery/pool-2.jpg', alt: { pt: 'Piscina ao nível da água', en: 'Pool at water level', es: 'Piscina a nivel del agua' } },
+    { src: '/images/gallery/pool-3.jpg', alt: { pt: 'Recanto junto à piscina', en: 'Poolside corner', es: 'Rincón junto a la piscina' } },
+    { src: '/images/gallery/pool-4.jpg', alt: { pt: 'Piscina e zona coberta', en: 'Pool and covered area', es: 'Piscina y zona cubierta' } },
   ],
   garden: [
-    { src: '/images/gallery/garden-1.svg', alt: { pt: 'O limoeiro', en: 'The lemon tree', es: 'El limonero' } },
-    { src: '/images/gallery/garden-2.svg', alt: { pt: 'Jardim tropical', en: 'Tropical garden', es: 'Jardín tropical' } },
-    { src: '/images/gallery/garden-3.svg', alt: { pt: 'Plantas do quintal', en: 'Backyard plants', es: 'Plantas del jardín' } },
-    { src: '/images/gallery/garden-4.svg', alt: { pt: 'Caminho do jardim', en: 'Garden path', es: 'Camino del jardín' } },
+    { src: '/images/gallery/garden-1.jpg', alt: { pt: 'O limoeiro e a rede', en: 'The lemon tree and the hammock', es: 'El limonero y la hamaca' } },
+    { src: '/images/gallery/garden-2.jpg', alt: { pt: 'Zona de estar à sombra', en: 'Shaded lounge area', es: 'Zona de estar a la sombra' } },
+    { src: '/images/gallery/garden-3.jpg', alt: { pt: 'Detalhe do jardim', en: 'Garden detail', es: 'Detalle del jardín' } },
+    { src: '/images/gallery/garden-4.jpg', alt: { pt: 'Pormenor do limoeiro', en: 'Lemon tree detail', es: 'Detalle del limonero' } },
+    { src: '/images/gallery/garden-5.jpg', alt: { pt: 'Espreguiçadeiras no jardim', en: 'Sun loungers in the garden', es: 'Tumbonas en el jardín' } },
   ],
   interior: [
     { src: '/images/gallery/interior-1.jpg', alt: { pt: 'Sala de estar', en: 'Living room', es: 'Sala de estar' } },
@@ -143,9 +144,10 @@ export const galleryImages: Record<GalleryCategory, GalleryImage[]> = {
     { src: '/images/gallery/interior-6.jpg', alt: { pt: 'Casa de banho', en: 'Bathroom', es: 'Baño' } },
   ],
   outdoor: [
-    { src: '/images/gallery/outdoor-1.svg', alt: { pt: 'Zona de churrasco', en: 'Barbecue area', es: 'Zona de barbacoa' } },
-    { src: '/images/gallery/outdoor-2.svg', alt: { pt: 'Mesa exterior', en: 'Outdoor table', es: 'Mesa exterior' } },
-    { src: '/images/gallery/outdoor-3.svg', alt: { pt: 'Zona coberta', en: 'Covered area', es: 'Zona cubierta' } },
-    { src: '/images/gallery/outdoor-4.svg', alt: { pt: 'Entardecer no pátio', en: 'Evening on the patio', es: 'Atardecer en el patio' } },
+    { src: '/images/gallery/outdoor-1.jpg', alt: { pt: 'Cantinho do churrasco', en: 'The barbecue corner', es: 'Rincón de la barbacoa' } },
+    { src: '/images/gallery/outdoor-2.jpg', alt: { pt: 'Pátio coberto ao anoitecer', en: 'Covered patio at dusk', es: 'Patio cubierto al anochecer' } },
+    { src: '/images/gallery/outdoor-3.jpg', alt: { pt: 'Entrada com o nome da casa', en: 'Entrance with the house name', es: 'Entrada con el nombre de la casa' } },
+    { src: '/images/gallery/outdoor-4.jpg', alt: { pt: 'O quintal ao anoitecer', en: 'The backyard at dusk', es: 'El jardín trasero al anochecer' } },
+    { src: '/images/gallery/outdoor-5.jpg', alt: { pt: 'Matraquilhos na zona coberta', en: 'Foosball table in the covered area', es: 'Futbolín en la zona cubierta' } },
   ],
 };
