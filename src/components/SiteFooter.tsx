@@ -15,7 +15,7 @@ export default function SiteFooter({ locale }: SiteFooterProps) {
     <footer className="site-footer">
       <div className="container site-footer__inner">
         <div className="site-footer__brand">
-          <span className="site-footer__name">{t.siteName}</span>
+          <img src="/images/logo-full.png" alt={t.siteName} className="site-footer__logo" />
           <span className="site-footer__location">{t.footerLocation}</span>
         </div>
 

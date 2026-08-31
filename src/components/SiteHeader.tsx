@@ -47,7 +47,8 @@ export default function SiteHeader({ locale, currentPage }: SiteHeaderProps) {
     <header className={headerClassName}>
       <div className="container site-header__inner">
         <Link href={localePath(locale, '/')} className="site-header__brand">
-          {t.siteName}
+          <img src="/images/logo-icon.png" alt="" className="site-header__logo" />
+          <span>{t.siteName}</span>
         </Link>
 
         <nav className="site-header__nav" aria-label="Main navigation">
