@@ -147,11 +147,10 @@ export const home: Record<Locale, HomeContent> = {
       intro: 'Uma lista simples com tudo o que torna a estadia mais confortável.',
       items: [
         'Piscina exterior privada',
-        'Jardim com limoeiro e plantas tropicais',
+        'Jardim com limoeiro',
         'Zona exterior coberta com churrasqueira',
         'WiFi gratuito em toda a casa',
         'Espaço totalmente privado durante a estadia',
-        'Estacionamento gratuito',
       ],
     },
     location: {
@@ -159,7 +158,7 @@ export const home: Record<Locale, HomeContent> = {
       title: 'Santa Justa, no coração do Ribatejo',
       paragraph:
         'A casa fica em Santa Justa, no concelho de Coruche, a cerca de 15 minutos de carro da Barragem de Montargil, uma das maiores albufeiras de Portugal continental e ponto de partida para praias fluviais, desportos aquáticos e passeios pela natureza. Consulte a página de Pontos de Interesse para mais sugestões da região.',
-      address: 'Rua do Faial, Santa Justa, Coruche',
+      address: 'Santa Justa, Coruche',
     },
     socialProof: {
       eyebrow: 'Avaliações',
@@ -262,11 +261,10 @@ export const home: Record<Locale, HomeContent> = {
       intro: 'A simple list of everything that makes your stay more comfortable.',
       items: [
         'Private outdoor pool',
-        'Garden with lemon tree and tropical plants',
+        'Garden with lemon tree',
         'Covered outdoor area with barbecue',
         'Free WiFi throughout the house',
         'Fully private space during your stay',
-        'Free parking',
       ],
     },
     location: {
@@ -274,7 +272,7 @@ export const home: Record<Locale, HomeContent> = {
       title: 'Santa Justa, in the heart of the Ribatejo',
       paragraph:
         'The house is located in Santa Justa, in the Coruche municipality, about a 15-minute drive from the Montargil Dam, one of mainland Portugal’s largest reservoirs and a gateway to river beaches, water sports and nature walks. Check the Places to Visit page for more suggestions around the region.',
-      address: 'Rua do Faial, Santa Justa, Coruche, Portugal',
+      address: 'Santa Justa, Coruche, Portugal',
     },
     socialProof: {
       eyebrow: 'Reviews',
@@ -377,11 +375,10 @@ export const home: Record<Locale, HomeContent> = {
       intro: 'Una lista sencilla con todo lo que hace la estancia más cómoda.',
       items: [
         'Piscina exterior privada',
-        'Jardín con limonero y plantas tropicales',
+        'Jardín con limonero',
         'Zona exterior cubierta con barbacoa',
         'WiFi gratis en toda la casa',
         'Espacio totalmente privado durante la estancia',
-        'Aparcamiento gratuito',
       ],
     },
     location: {
@@ -389,7 +386,7 @@ export const home: Record<Locale, HomeContent> = {
       title: 'Santa Justa, en el corazón del Ribatejo',
       paragraph:
         'La casa está ubicada en Santa Justa, municipio de Coruche, a unos 15 minutos en coche de la Presa de Montargil, uno de los mayores embalses de Portugal continental y punto de partida hacia playas fluviales, deportes acuáticos y paseos por la naturaleza. Consulte la página de Puntos de Interés para más sugerencias de la región.',
-      address: 'Rua do Faial, Santa Justa, Coruche, Portugal',
+      address: 'Santa Justa, Coruche, Portugal',
     },
     socialProof: {
       eyebrow: 'Opiniones',
