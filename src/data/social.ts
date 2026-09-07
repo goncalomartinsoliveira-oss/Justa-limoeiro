@@ -3,8 +3,7 @@ import type { Locale } from '@/lib/i18n';
 export const phoneDisplay = '+351 919 996 263';
 export const whatsappNumber = '351919996263';
 
-// Placeholder: not the real address yet, swap when the owners confirm one.
-export const contactEmail = 'geral@patiojustalimoeiro.pt';
+export const contactEmail = 'justalimoeiro@gmail.com';
 
 export const instagramUrl = 'https://www.instagram.com/justalimoeiro';
 export const facebookUrl = 'https://www.facebook.com/profile.php?id=61589643395097';
@@ -14,8 +13,8 @@ export const facebookUrl = 'https://www.facebook.com/profile.php?id=615896433950
 export const wifiNetwork = 'PatioJustaLimoeiro';
 export const wifiPassword = 'ExemploLimoeiro2024';
 
-// Placeholder times: confirm the real check-in/check-out times with the owners.
-export const checkInTime = '15:00';
+export const checkInTime = '16:00';
+// Placeholder: confirm the real check-out time with the owners.
 export const checkOutTime = '11:00';
 
 export const whatsappMessage: Record<Locale, string> = {
