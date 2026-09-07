@@ -85,11 +85,11 @@ export const home: Record<Locale, HomeContent> = {
     },
     facts: [
       { icon: 'bedrooms', label: '3 quartos' },
-      { icon: 'guests', label: 'Até 8 hóspedes' },
+      { icon: 'guests', label: 'Até 7 hóspedes' },
       { icon: 'private', label: 'Espaço 100% privado' },
-      { icon: 'area', label: '90 m² de área' },
+      { icon: 'area', label: '360 m² de área' },
       { icon: 'pool', label: 'Piscina exterior' },
-      { icon: 'wifi', label: 'WiFi grátis' },
+      { icon: 'wifi', label: 'WiFi' },
     ],
     spaces: {
       eyebrow: 'Os Espaços',
@@ -121,7 +121,7 @@ export const home: Record<Locale, HomeContent> = {
     rooms: {
       eyebrow: 'Quartos & Camas',
       title: 'Espaço para toda a gente',
-      intro: 'A casa tem 3 quartos e capacidade para até 8 hóspedes.',
+      intro: 'A casa tem 3 quartos e capacidade para até 7 hóspedes.',
       items: ['2 camas individuais', '2 camas de casal', '2 sofás-cama'],
     },
     interior: {
@@ -199,11 +199,11 @@ export const home: Record<Locale, HomeContent> = {
     },
     facts: [
       { icon: 'bedrooms', label: '3 bedrooms' },
-      { icon: 'guests', label: 'Up to 8 guests' },
+      { icon: 'guests', label: 'Up to 7 guests' },
       { icon: 'private', label: '100% private space' },
-      { icon: 'area', label: '90 m² floor area' },
+      { icon: 'area', label: '360 m² floor area' },
       { icon: 'pool', label: 'Outdoor pool' },
-      { icon: 'wifi', label: 'Free WiFi' },
+      { icon: 'wifi', label: 'WiFi' },
     ],
     spaces: {
       eyebrow: 'The Spaces',
@@ -235,7 +235,7 @@ export const home: Record<Locale, HomeContent> = {
     rooms: {
       eyebrow: 'Rooms & Beds',
       title: 'Space for everyone',
-      intro: 'The house has 3 bedrooms and space for up to 8 guests.',
+      intro: 'The house has 3 bedrooms and space for up to 7 guests.',
       items: ['2 single beds', '2 double beds', '2 sofa beds'],
     },
     interior: {
@@ -313,11 +313,11 @@ export const home: Record<Locale, HomeContent> = {
     },
     facts: [
       { icon: 'bedrooms', label: '3 habitaciones' },
-      { icon: 'guests', label: 'Hasta 8 huéspedes' },
+      { icon: 'guests', label: 'Hasta 7 huéspedes' },
       { icon: 'private', label: 'Espacio 100% privado' },
-      { icon: 'area', label: '90 m² de superficie' },
+      { icon: 'area', label: '360 m² de superficie' },
       { icon: 'pool', label: 'Piscina exterior' },
-      { icon: 'wifi', label: 'WiFi gratis' },
+      { icon: 'wifi', label: 'WiFi' },
     ],
     spaces: {
       eyebrow: 'Los Espacios',
@@ -349,7 +349,7 @@ export const home: Record<Locale, HomeContent> = {
     rooms: {
       eyebrow: 'Habitaciones y Camas',
       title: 'Espacio para todos',
-      intro: 'La casa tiene 3 habitaciones y capacidad para hasta 8 huéspedes.',
+      intro: 'La casa tiene 3 habitaciones y capacidad para hasta 7 huéspedes.',
       items: ['2 camas individuales', '2 camas de matrimonio', '2 sofás cama'],
     },
     interior: {
