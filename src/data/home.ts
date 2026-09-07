@@ -143,13 +143,13 @@ export const home: Record<Locale, HomeContent> = {
     },
     amenities: {
       eyebrow: 'Comodidades',
-      title: 'Tudo o que precisa, nada a mais',
+      title: 'Tudo o que precisa, nada mais',
       intro: 'Uma lista simples com tudo o que torna a estadia mais confortável.',
       items: [
         'Piscina exterior privada',
         'Jardim com limoeiro',
         'Zona exterior coberta com churrasqueira',
-        'WiFi gratuito em toda a casa',
+        'WiFi em toda a casa',
         'Espaço totalmente privado durante a estadia',
       ],
     },
