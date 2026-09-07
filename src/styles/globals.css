@@ -1141,6 +1141,74 @@ h1, h2, h3, h4 {
   margin-bottom: 1.4rem;
 }
 
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.testimonial-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-sand-dark);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card blockquote {
+  margin: 0 0 1.2rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: var(--color-ink);
+  position: relative;
+  padding-left: 1.4rem;
+}
+
+.testimonial-card blockquote::before {
+  content: '\201C';
+  position: absolute;
+  left: 0;
+  top: -0.3rem;
+  font-size: 1.8rem;
+  font-style: normal;
+  color: var(--color-terracotta);
+  line-height: 1;
+}
+
+.testimonial-card figcaption {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.testimonial-card__author {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-ink);
+}
+
+.testimonial-card__date {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+}
+
+@media (max-width: 860px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- Guest guide (QR code page) ---------- */
 
 .guide-header {

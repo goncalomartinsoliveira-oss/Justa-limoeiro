@@ -53,6 +53,7 @@ export interface HomeContent {
     text: string;
     cta: string;
   };
+  testimonials: { quote: string; author: string; date: string }[];
   booking: {
     eyebrow: string;
     title: string;
@@ -166,6 +167,25 @@ export const home: Record<Locale, HomeContent> = {
       text: 'Os hóspedes que já ficaram no Pátio Justa Limoeiro partilham a sua experiência no Booking.com.',
       cta: 'Ver Avaliações no Booking.com',
     },
+    testimonials: [
+      {
+        quote:
+          'A estadia foi maravilhosa, os donos foram excecionais, a casa maravilhosa. Obrigada por esta estadia tão agradável!',
+        author: 'Tatiana e amigos',
+        date: 'Junho 2026',
+      },
+      {
+        quote: 'Que semana incrível que foi passada nesta casa! Obrigada pela simpatia! Até à próxima!',
+        author: 'Renata e amigos',
+        date: 'Julho 2026',
+      },
+      {
+        quote:
+          'Passámos uma ótima semana em família! O espaço e as comodidades da casa estavam impecáveis, não faltou nada. Os donos foram sempre prestáveis e estavam sempre disponíveis. Recomendamos e vamos regressar de certeza!',
+        author: 'Elisabete e família',
+        date: 'Julho 2026',
+      },
+    ],
     booking: {
       eyebrow: 'Reservas',
       title: 'Vamos combinar a sua estadia',
@@ -280,6 +300,25 @@ export const home: Record<Locale, HomeContent> = {
       text: 'Guests who have stayed at Pátio Justa Limoeiro share their experience on Booking.com.',
       cta: 'Read Reviews on Booking.com',
     },
+    testimonials: [
+      {
+        quote:
+          'The stay was wonderful, the hosts were exceptional, the house wonderful. Thank you for such a lovely stay!',
+        author: 'Tatiana and friends',
+        date: 'June 2026',
+      },
+      {
+        quote: 'What an amazing week we spent in this house! Thank you for your warmth! Until next time!',
+        author: 'Renata and friends',
+        date: 'July 2026',
+      },
+      {
+        quote:
+          'We spent a wonderful week as a family! The space and amenities were flawless, nothing was missing. The hosts were always helpful and available. We recommend it and will definitely be back!',
+        author: 'Elisabete and family',
+        date: 'July 2026',
+      },
+    ],
     booking: {
       eyebrow: 'Booking',
       title: "Let's plan your stay",
@@ -394,6 +433,25 @@ export const home: Record<Locale, HomeContent> = {
       text: 'Los huéspedes que ya se han alojado en Pátio Justa Limoeiro comparten su experiencia en Booking.com.',
       cta: 'Ver Opiniones en Booking.com',
     },
+    testimonials: [
+      {
+        quote:
+          'La estancia fue maravillosa, los anfitriones fueron excepcionales, la casa maravillosa. ¡Gracias por una estancia tan agradable!',
+        author: 'Tatiana y amigos',
+        date: 'Junio 2026',
+      },
+      {
+        quote: '¡Qué semana tan increíble pasamos en esta casa! ¡Gracias por la simpatía! ¡Hasta la próxima!',
+        author: 'Renata y amigos',
+        date: 'Julio 2026',
+      },
+      {
+        quote:
+          '¡Pasamos una semana estupenda en familia! El espacio y las comodidades de la casa estaban impecables, no faltó nada. Los anfitriones fueron siempre atentos y estuvieron siempre disponibles. ¡Lo recomendamos y sin duda volveremos!',
+        author: 'Elisabete y familia',
+        date: 'Julio 2026',
+      },
+    ],
     booking: {
       eyebrow: 'Reservas',
       title: 'Organicemos su estancia',

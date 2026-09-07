@@ -230,6 +230,18 @@ export default function HomePage({ locale }: HomePageProps) {
             {t.socialProof.cta}
           </a>
         </div>
+
+        <div className="container testimonials-grid">
+          {t.testimonials.map((item) => (
+            <figure className="testimonial-card" key={item.author}>
+              <blockquote>{item.quote}</blockquote>
+              <figcaption>
+                <span className="testimonial-card__author">{item.author}</span>
+                <span className="testimonial-card__date">{item.date}</span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
       </section>
 
       <section className="section" id="booking">
