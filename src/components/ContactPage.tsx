@@ -32,6 +32,7 @@ export default function ContactPage({ locale }: ContactPageProps) {
               formNote={t.formNote}
               successMessage={t.successMessage}
               errorMessage={t.errorMessage}
+              capacityMessage={t.capacityMessage}
             />
           </div>
 

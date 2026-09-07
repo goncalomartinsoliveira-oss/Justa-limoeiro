@@ -9,6 +9,7 @@ interface BookingFormProps {
   formNote: string;
   successMessage: string;
   errorMessage: string;
+  capacityMessage: string;
 }
 
 export default function BookingForm({
@@ -16,13 +17,23 @@ export default function BookingForm({
   formNote,
   successMessage,
   errorMessage,
+  capacityMessage,
 }: BookingFormProps) {
-  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error' | 'invalid'>(
+    'idle',
+  );
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     const payload = Object.fromEntries(new FormData(form).entries());
+
+    const adults = Number(payload.adults) || 0;
+    const children = Number(payload.children) || 0;
+    if (adults + children > 8) {
+      setStatus('invalid');
+      return;
+    }
 
     setStatus('sending');
     try {
@@ -51,15 +62,9 @@ export default function BookingForm({
           <input id="email" name="email" type="email" required />
         </div>
       </div>
-      <div className="form__row">
-        <div className="form__field">
-          <label htmlFor="phone">{fields.phone}</label>
-          <input id="phone" name="phone" type="tel" />
-        </div>
-        <div className="form__field">
-          <label htmlFor="guests">{fields.guests}</label>
-          <input id="guests" name="guests" type="number" min={1} />
-        </div>
+      <div className="form__field">
+        <label htmlFor="phone">{fields.phone}</label>
+        <input id="phone" name="phone" type="tel" />
       </div>
       <div className="form__row">
         <div className="form__field">
@@ -69,6 +74,16 @@ export default function BookingForm({
         <div className="form__field">
           <label htmlFor="checkOut">{fields.checkOut}</label>
           <input id="checkOut" name="checkOut" type="date" />
+        </div>
+      </div>
+      <div className="form__row">
+        <div className="form__field">
+          <label htmlFor="adults">{fields.adults}</label>
+          <input id="adults" name="adults" type="number" min={1} max={8} required />
+        </div>
+        <div className="form__field">
+          <label htmlFor="children">{fields.children}</label>
+          <input id="children" name="children" type="number" min={0} max={8} />
         </div>
       </div>
       <div className="form__field">
@@ -82,8 +97,16 @@ export default function BookingForm({
       <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>
         {fields.submit}
       </button>
-      {status === 'success' && <p className="form__note form__note--success">{successMessage}</p>}
-      {status === 'error' && <p className="form__note form__note--error">{errorMessage}</p>}
+      {status === 'success' && (
+        <div className="form__alert form__alert--success" role="status">
+          {successMessage}
+        </div>
+      )}
+      {(status === 'error' || status === 'invalid') && (
+        <div className="form__alert form__alert--error" role="alert">
+          {status === 'invalid' ? capacityMessage : errorMessage}
+        </div>
+      )}
       {(status === 'idle' || status === 'sending') && <p className="form__note">{formNote}</p>}
     </form>
   );

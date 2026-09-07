@@ -185,6 +185,12 @@ export const home: Record<Locale, HomeContent> = {
         author: 'Elisabete e família',
         date: 'Julho 2026',
       },
+      {
+        quote:
+          'A casa é maravilhosa. Uma paz de espírito com tudo o que precisamos. Sem dúvida que vamos voltar. Obrigada Rui e família por tudo o que proporcionou à nossa família. Votos dos maiores sucessos!',
+        author: 'Diana, Marc e Olívia',
+        date: 'Julho 2026',
+      },
     ],
     booking: {
       eyebrow: 'Reservas',
@@ -318,6 +324,12 @@ export const home: Record<Locale, HomeContent> = {
         author: 'Elisabete and family',
         date: 'July 2026',
       },
+      {
+        quote:
+          'The house is wonderful. Complete peace of mind with everything we needed. We will definitely be back. Thank you Rui and family for everything you gave our family. Wishing you every success!',
+        author: 'Diana, Marc and Olívia',
+        date: 'July 2026',
+      },
     ],
     booking: {
       eyebrow: 'Booking',
@@ -449,6 +461,12 @@ export const home: Record<Locale, HomeContent> = {
         quote:
           '¡Pasamos una semana estupenda en familia! El espacio y las comodidades de la casa estaban impecables, no faltó nada. Los anfitriones fueron siempre atentos y estuvieron siempre disponibles. ¡Lo recomendamos y sin duda volveremos!',
         author: 'Elisabete y familia',
+        date: 'Julio 2026',
+      },
+      {
+        quote:
+          'La casa es maravillosa. Una paz de espíritu con todo lo que necesitamos. Sin duda que volveremos. Gracias Rui y familia por todo lo que le proporcionaron a nuestra familia. ¡Deseamos los mayores éxitos!',
+        author: 'Diana, Marc y Olívia',
         date: 'Julio 2026',
       },
     ],

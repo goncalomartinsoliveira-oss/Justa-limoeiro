@@ -11,13 +11,15 @@ export interface ContactContent {
   formNote: string;
   successMessage: string;
   errorMessage: string;
+  capacityMessage: string;
   fields: {
     name: string;
     email: string;
     phone: string;
     checkIn: string;
     checkOut: string;
-    guests: string;
+    adults: string;
+    children: string;
     message: string;
     submit: string;
   };
@@ -36,13 +38,15 @@ export const contact: Record<Locale, ContactContent> = {
     formNote: 'Responderemos assim que possível, geralmente dentro de 24 horas.',
     successMessage: 'Pedido enviado com sucesso! Entraremos em contacto brevemente.',
     errorMessage: 'Não foi possível enviar o pedido. Tente novamente ou contacte-nos por telefone.',
+    capacityMessage: 'O número total de hóspedes (adultos e crianças) não pode ultrapassar 8.',
     fields: {
       name: 'Nome',
       email: 'Email',
       phone: 'Telefone',
       checkIn: 'Data de Check-in',
       checkOut: 'Data de Check-out',
-      guests: 'Número de Hóspedes',
+      adults: 'Número de Adultos',
+      children: 'Número de Crianças',
       message: 'Mensagem (opcional)',
       submit: 'Enviar Pedido',
     },
@@ -59,13 +63,15 @@ export const contact: Record<Locale, ContactContent> = {
     formNote: 'We will get back to you as soon as possible, usually within 24 hours.',
     successMessage: 'Request sent successfully! We will be in touch shortly.',
     errorMessage: 'We could not send your request. Please try again or contact us by phone.',
+    capacityMessage: 'The total number of guests (adults and children) cannot exceed 8.',
     fields: {
       name: 'Name',
       email: 'Email',
       phone: 'Phone',
       checkIn: 'Check-in Date',
       checkOut: 'Check-out Date',
-      guests: 'Number of Guests',
+      adults: 'Number of Adults',
+      children: 'Number of Children',
       message: 'Message (optional)',
       submit: 'Send Request',
     },
@@ -82,13 +88,15 @@ export const contact: Record<Locale, ContactContent> = {
     formNote: 'Responderemos lo antes posible, normalmente dentro de 24 horas.',
     successMessage: '¡Solicitud enviada con éxito! Nos pondremos en contacto en breve.',
     errorMessage: 'No pudimos enviar su solicitud. Inténtelo de nuevo o contáctenos por teléfono.',
+    capacityMessage: 'El número total de huéspedes (adultos y niños) no puede superar los 8.',
     fields: {
       name: 'Nombre',
       email: 'Email',
       phone: 'Teléfono',
       checkIn: 'Fecha de Entrada',
       checkOut: 'Fecha de Salida',
-      guests: 'Número de Huéspedes',
+      adults: 'Número de Adultos',
+      children: 'Número de Niños',
       message: 'Mensaje (opcional)',
       submit: 'Enviar Solicitud',
     },

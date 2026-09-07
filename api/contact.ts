@@ -8,7 +8,8 @@ interface ContactPayload {
   phone?: string;
   checkIn?: string;
   checkOut?: string;
-  guests?: string;
+  adults?: string;
+  children?: string;
   message?: string;
   website?: string; // honeypot field, should stay empty
 }
@@ -39,7 +40,7 @@ export default async function handler(req: Request): Promise<Response> {
     return new Response(JSON.stringify({ ok: true }), { status: 200 });
   }
 
-  const { name, email, phone, checkIn, checkOut, guests, message } = data;
+  const { name, email, phone, checkIn, checkOut, adults, children, message } = data;
 
   if (!name || !email) {
     return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
@@ -62,7 +63,8 @@ export default async function handler(req: Request): Promise<Response> {
     <p><strong>Telefone:</strong> ${escapeHtml(phone || '-')}</p>
     <p><strong>Check-in:</strong> ${escapeHtml(checkIn || '-')}</p>
     <p><strong>Check-out:</strong> ${escapeHtml(checkOut || '-')}</p>
-    <p><strong>N&uacute;mero de h&oacute;spedes:</strong> ${escapeHtml(guests || '-')}</p>
+    <p><strong>Adultos:</strong> ${escapeHtml(adults || '-')}</p>
+    <p><strong>Crian&ccedil;as:</strong> ${escapeHtml(children || '-')}</p>
     <p><strong>Mensagem:</strong><br />${escapeHtml(message || '-').replace(/\n/g, '<br />')}</p>
   `;
 

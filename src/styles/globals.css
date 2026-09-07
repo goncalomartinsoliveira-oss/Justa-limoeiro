@@ -805,12 +805,25 @@ h1, h2, h3, h4 {
   margin-top: 0.8rem;
 }
 
-.form__note--success {
-  color: var(--color-olive);
+.form__alert {
+  margin-top: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
-.form__note--error {
-  color: var(--color-terracotta);
+.form__alert--success {
+  background: #eef1e7;
+  border-color: var(--color-olive);
+  color: var(--color-olive-dark);
+}
+
+.form__alert--error {
+  background: #f8e9e3;
+  border-color: var(--color-terracotta);
+  color: var(--color-terracotta-dark);
 }
 
 .form__honeypot {
@@ -1143,7 +1156,7 @@ h1, h2, h3, h4 {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-sm);
   margin-top: var(--space-lg);
 }
