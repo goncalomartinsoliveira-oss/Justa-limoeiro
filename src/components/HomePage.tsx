@@ -83,8 +83,8 @@ export default function HomePage({ locale }: HomePageProps) {
 
       <section className="section" id="welcome">
         <div className="container split">
-          <div className="split__media">
-            <img src="/images/gallery/outdoor-2.jpg" alt="" />
+          <div className="split__media split__media--landscape">
+            <img src="/images/welcome-patio.jpg" alt="" />
           </div>
           <div className="split__content">
             <span className="eyebrow">{t.welcome.eyebrow}</span>

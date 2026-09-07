@@ -566,6 +566,10 @@ h1, h2, h3, h4 {
   border-radius: var(--radius);
 }
 
+.split__media--landscape img {
+  aspect-ratio: 1400 / 631;
+}
+
 .split__content h2 {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   margin: 0.6rem 0 1.2rem;
