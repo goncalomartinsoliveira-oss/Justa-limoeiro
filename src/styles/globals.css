@@ -184,10 +184,6 @@ h1, h2, h3, h4 {
   border-bottom-color: transparent;
 }
 
-.site-header--transparent .site-header__brand {
-  color: var(--color-white);
-}
-
 .site-header--transparent .site-header__nav a {
   color: var(--color-white);
 }
@@ -210,29 +206,18 @@ h1, h2, h3, h4 {
   align-items: center;
   justify-content: space-between;
   gap: var(--space-md);
-  padding-top: 1.1rem;
-  padding-bottom: 1.1rem;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
 }
 
 .site-header__brand {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 600;
-  min-width: 0;
-}
-
-.site-header__brand span {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   min-width: 0;
 }
 
 .site-header__logo {
-  height: 2.1rem;
+  height: 4.2rem;
   width: auto;
   flex-shrink: 0;
 }
@@ -417,17 +402,8 @@ h1, h2, h3, h4 {
     gap: 0.75rem;
   }
 
-  .site-header__brand {
-    font-size: 0.95rem;
-  }
-
-  .site-header__brand span {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
+  .site-header__logo {
+    height: 3.1rem;
   }
 
   .site-header__actions {
@@ -1162,10 +1138,6 @@ h1, h2, h3, h4 {
 .guide-header__brand {
   display: flex;
   align-items: center;
-  gap: 0.55rem;
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 600;
 }
 
 .guide-info-grid {

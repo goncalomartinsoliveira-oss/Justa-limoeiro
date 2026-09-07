@@ -30,8 +30,7 @@ export default function GuidePage({ locale }: GuidePageProps) {
       <header className="guide-header">
         <div className="container guide-header__inner">
           <span className="guide-header__brand">
-            <img src="/images/logo-icon.png" alt="" className="site-header__logo" />
-            {h.hero.title}
+            <img src="/images/logo-full.png" alt={h.hero.title} className="site-header__logo" />
           </span>
           <div className="site-header__langs" aria-label="Language switcher">
             {locales.map((l, i) => (
