@@ -134,7 +134,7 @@ export const home: Record<Locale, HomeContent> = {
     },
     perfectFor: {
       eyebrow: 'Ideal Para',
-      title: 'Feita para diferentes tipos de estadia',
+      title: 'Perfeita para diferentes tipos de estadia',
       items: [
         { icon: 'weekend', label: 'Pausas de fim de semana' },
         { icon: 'family', label: 'Férias em família' },
