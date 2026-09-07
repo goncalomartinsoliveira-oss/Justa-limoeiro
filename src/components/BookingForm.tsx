@@ -12,6 +12,8 @@ interface BookingFormProps {
   capacityMessage: string;
 }
 
+const MAX_GUESTS = 8;
+
 export default function BookingForm({
   fields,
   formNote,
@@ -22,15 +24,18 @@ export default function BookingForm({
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error' | 'invalid'>(
     'idle',
   );
+  const [adults, setAdults] = useState(1);
+  const [children, setChildren] = useState(0);
+
+  const maxAdults = MAX_GUESTS - children;
+  const maxChildren = MAX_GUESTS - adults;
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     const payload = Object.fromEntries(new FormData(form).entries());
 
-    const adults = Number(payload.adults) || 0;
-    const children = Number(payload.children) || 0;
-    if (adults + children > 8) {
+    if (adults + children > MAX_GUESTS) {
       setStatus('invalid');
       return;
     }
@@ -45,6 +50,8 @@ export default function BookingForm({
       if (!response.ok) throw new Error('request failed');
       setStatus('success');
       form.reset();
+      setAdults(1);
+      setChildren(0);
     } catch {
       setStatus('error');
     }
@@ -79,11 +86,28 @@ export default function BookingForm({
       <div className="form__row">
         <div className="form__field">
           <label htmlFor="adults">{fields.adults}</label>
-          <input id="adults" name="adults" type="number" min={1} max={8} required />
+          <input
+            id="adults"
+            name="adults"
+            type="number"
+            min={1}
+            max={maxAdults}
+            value={adults}
+            onChange={(e) => setAdults(Math.min(maxAdults, Math.max(1, Number(e.target.value))))}
+            required
+          />
         </div>
         <div className="form__field">
           <label htmlFor="children">{fields.children}</label>
-          <input id="children" name="children" type="number" min={0} max={8} />
+          <input
+            id="children"
+            name="children"
+            type="number"
+            min={0}
+            max={maxChildren}
+            value={children}
+            onChange={(e) => setChildren(Math.min(maxChildren, Math.max(0, Number(e.target.value))))}
+          />
         </div>
       </div>
       <div className="form__field">
