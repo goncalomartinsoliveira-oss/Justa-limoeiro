@@ -801,6 +801,23 @@ h1, h2, h3, h4 {
   margin-top: 0.8rem;
 }
 
+.form__note--success {
+  color: var(--color-olive);
+}
+
+.form__note--error {
+  color: var(--color-terracotta);
+}
+
+.form__honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
 @media (max-width: 860px) {
   .booking-grid {
     grid-template-columns: 1fr;

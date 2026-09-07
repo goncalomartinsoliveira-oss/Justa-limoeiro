@@ -9,6 +9,8 @@ export interface ContactContent {
   bookingCta: string;
   bookingUrl: string;
   formNote: string;
+  successMessage: string;
+  errorMessage: string;
   fields: {
     name: string;
     email: string;
@@ -31,7 +33,9 @@ export const contact: Record<Locale, ContactContent> = {
     bookingNote: 'Prefere reservar através do Booking.com?',
     bookingCta: 'Ver Disponibilidade no Booking.com',
     bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.pt-pt.html',
-    formNote: 'Formulário de contacto. Brevemente com envio automático de email.',
+    formNote: 'Responderemos assim que possível, geralmente dentro de 24 horas.',
+    successMessage: 'Pedido enviado com sucesso! Entraremos em contacto brevemente.',
+    errorMessage: 'Não foi possível enviar o pedido. Tente novamente ou contacte-nos por telefone.',
     fields: {
       name: 'Nome',
       email: 'Email',
@@ -52,7 +56,9 @@ export const contact: Record<Locale, ContactContent> = {
     bookingNote: 'Prefer to book through Booking.com?',
     bookingCta: 'Check Availability on Booking.com',
     bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.en-gb.html',
-    formNote: 'Contact form. Automatic email sending coming soon.',
+    formNote: 'We will get back to you as soon as possible, usually within 24 hours.',
+    successMessage: 'Request sent successfully! We will be in touch shortly.',
+    errorMessage: 'We could not send your request. Please try again or contact us by phone.',
     fields: {
       name: 'Name',
       email: 'Email',
@@ -73,7 +79,9 @@ export const contact: Record<Locale, ContactContent> = {
     bookingNote: '¿Prefiere reservar a través de Booking.com?',
     bookingCta: 'Ver Disponibilidad en Booking.com',
     bookingUrl: 'https://www.booking.com/hotel/pt/patio-justa-limoeiro-santa-justa.es.html',
-    formNote: 'Formulario de contacto. Envío automático de email próximamente.',
+    formNote: 'Responderemos lo antes posible, normalmente dentro de 24 horas.',
+    successMessage: '¡Solicitud enviada con éxito! Nos pondremos en contacto en breve.',
+    errorMessage: 'No pudimos enviar su solicitud. Inténtelo de nuevo o contáctenos por teléfono.',
     fields: {
       name: 'Nombre',
       email: 'Email',

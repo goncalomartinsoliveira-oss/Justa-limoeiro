@@ -27,7 +27,12 @@ export default function ContactPage({ locale }: ContactPageProps) {
       <div className="container section--tight">
         <div className="booking-grid">
           <div className="booking-card">
-            <BookingForm fields={t.fields} formNote={t.formNote} />
+            <BookingForm
+              fields={t.fields}
+              formNote={t.formNote}
+              successMessage={t.successMessage}
+              errorMessage={t.errorMessage}
+            />
           </div>
 
           <div className="booking-card">
