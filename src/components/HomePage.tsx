@@ -48,7 +48,7 @@ export default function HomePage({ locale }: HomePageProps) {
 
       <section className="hero">
         <div className="hero__media">
-          <img src="/images/hero-pool.jpg" alt="" />
+          <img src="/images/hero-dusk.jpg" alt="" />
         </div>
         <div className="container hero__content">
           <span className="eyebrow hero__eyebrow">{t.hero.eyebrow}</span>
